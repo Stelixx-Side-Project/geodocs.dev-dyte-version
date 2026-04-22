@@ -42,14 +42,14 @@ export default function CommunitySection() {
         </div>
         <div className="flex w-full flex-col items-center justify-center gap-2 text-sm font-semibold lg:flex-row lg:gap-8">
           <Link
-            className="flex w-full items-center justify-center gap-2 rounded-sm border border-solid border-primary-100 bg-primary-100/10 px-2 py-2 text-primary-100 lg:w-auto"
+            className="homepage__hero-cta-link flex w-full items-center justify-center gap-2 rounded-sm border border-solid border-primary-100 bg-primary-100/10 px-2 py-2 text-primary-100 lg:w-auto"
             href="https://x.com/GeolifyAI"
             target="_blank"
           >
             <Twitter className="h-5 w-5" /> X &rarr;
           </Link>
           <Link
-            className="flex w-full items-center justify-center gap-2 rounded-sm border border-solid border-primary-100 bg-primary-100/10 px-2 py-2 text-primary-100 lg:w-auto"
+            className="homepage__hero-cta-link flex w-full items-center justify-center gap-2 rounded-sm border border-solid border-primary-100 bg-primary-100/10 px-2 py-2 text-primary-100 lg:w-auto"
             href="https://www.linkedin.com/groups/17784036/"
             target="_blank"
           >

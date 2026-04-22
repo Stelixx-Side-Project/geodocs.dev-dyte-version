@@ -45,7 +45,7 @@ function FooterLinks({ name, links }) {
           <Link
             key={itemName}
             href={href}
-            className="text-base text-gray-700 hover:text-primary hover:no-underline dark:text-[#f9f9f9]"
+            className="homepage__hero-cta-link text-base text-gray-700 hover:text-primary hover:no-underline dark:text-[#f9f9f9]"
             target={href.startsWith('http') ? '_blank' : undefined}
           >
             {itemName}
@@ -58,7 +58,7 @@ function FooterLinks({ name, links }) {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#F4F7FF] dark:bg-[#191919]">
+    <footer className="homepage-footer bg-[#F4F7FF] dark:bg-[#191919]">
       <div className="mx-auto flex w-full max-w-[1080px] flex-col px-6 py-12">
         <div className="mb-12 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <ThemedImage
@@ -73,7 +73,7 @@ export default function Footer() {
           <Link
             href="https://www.google.com/preferences/source?q=geodocs.dev"
             target="_blank"
-            className="inline-flex items-center gap-2 rounded-lg border border-secondary-700 px-4 py-2 text-sm font-semibold text-zinc-700 hover:border-primary hover:text-primary hover:no-underline dark:text-zinc-100"
+            className="homepage__hero-cta-link inline-flex items-center gap-2 rounded-lg border border-secondary-700 px-4 py-2 text-sm font-semibold text-zinc-700 hover:border-primary hover:text-primary hover:no-underline dark:text-zinc-100"
           >
             <span>G</span>
             <span>Add Geodocs as a preferred source on Google</span>
@@ -97,7 +97,7 @@ export default function Footer() {
               © 2026 Geodocs is a trademark of{' '}
               <Link
                 href="https://geolify.ai/geo-ai-visibility-audit?utm_source=geodocs.dev&utm_medium=referral&utm_campaign=brand_audit&utm_content=copyright_geolify"
-                className="text-inherit underline"
+                className="homepage__hero-cta-link text-inherit underline"
                 target="_blank"
               >
                 Geolify
@@ -107,16 +107,36 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-4">
-            <Link href="https://github.com/dyte-io" aria-label="GitHub" target="_blank">
+            <Link
+              href="https://github.com/dyte-io"
+              aria-label="GitHub"
+              target="_blank"
+              className="homepage__hero-cta-link"
+            >
               <Github className="h-7 w-7 text-zinc-400 hover:text-primary" />
             </Link>
-            <Link href="https://linkedin.com/company/dyteio" aria-label="LinkedIn" target="_blank">
+            <Link
+              href="https://linkedin.com/company/dyteio"
+              aria-label="LinkedIn"
+              target="_blank"
+              className="homepage__hero-cta-link"
+            >
               <Linkedin className="h-7 w-7 text-zinc-400 hover:text-primary" />
             </Link>
-            <Link href="https://twitter.com/dyte_io" aria-label="Twitter" target="_blank">
+            <Link
+              href="https://twitter.com/dyte_io"
+              aria-label="Twitter"
+              target="_blank"
+              className="homepage__hero-cta-link"
+            >
               <XIcon className="h-7 w-7 text-zinc-400 hover:text-primary" />
             </Link>
-            <Link href="https://youtube.com/company/dyteio" aria-label="YouTube" target="_blank">
+            <Link
+              href="https://youtube.com/company/dyteio"
+              aria-label="YouTube"
+              target="_blank"
+              className="homepage__hero-cta-link"
+            >
               <Youtube className="h-7 w-7 text-zinc-400 hover:text-primary" />
             </Link>
           </div>

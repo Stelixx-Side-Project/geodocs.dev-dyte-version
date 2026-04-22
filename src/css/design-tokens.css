@@ -283,9 +283,9 @@
 
   /* Button Styles */
   .ds-btn-primary {
-    background-color: var(--ds-color-dark-green);
-    color: var(--ds-color-black);
-    border: 1px solid var(--ds-color-dark-green);
+    background-color: var(--ds-color-mongodb-green);
+    color: var(--ds-color-forest-black);
+    border: 1px solid var(--ds-color-mongodb-green);
     border-radius: var(--ds-radius-pill);
     font-weight: var(--ds-type-button-weight);
     font-size: var(--ds-type-button-size);
@@ -294,11 +294,14 @@
     cursor: pointer;
 
     &:hover {
-      transform: scale(1.1);
+      background-color: var(--ds-color-dark-green);
+      color: var(--ds-color-pure-white);
+      border-color: var(--ds-color-dark-green);
+      transform: scale(1.05);
     }
 
     &:active {
-      transform: scale(0.85);
+      transform: scale(0.98);
     }
   }
 

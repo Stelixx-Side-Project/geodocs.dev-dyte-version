@@ -18,7 +18,7 @@ export default function APIReferenceSection() {
         <Link
           href="/guides/geo/operations"
           aria-label="Metadata Protocol"
-          className="absolute top-8 right-8 flex h-16 w-16 items-center justify-center rounded-full bg-zinc-600/40 dark:bg-transparent"
+          className="homepage__hero-cta-link absolute top-8 right-8 flex h-16 w-16 items-center justify-center rounded-full bg-zinc-600/40 dark:bg-transparent"
         >
           <ArrowUpRight className="h-6 w-6 text-zinc-400 dark:text-black" />
         </Link>
@@ -38,9 +38,29 @@ export default function APIReferenceSection() {
           </div>
         </div>
         <div className="flex flex-1 justify-end">
-          <pre className="w-full max-w-xl overflow-x-auto rounded-xl border border-zinc-700 bg-black/50 p-6 text-sm leading-relaxed text-zinc-200">
-            <code>{metadataSample}</code>
-          </pre>
+          <div className="w-full max-w-xl rounded-2xl border border-zinc-700 bg-black/70 p-4 text-zinc-200 shadow-2xl">
+            <div className="mb-3 flex items-center justify-between rounded-xl border border-zinc-700 bg-zinc-900/80 px-3 py-2 text-xs">
+              <div className="flex items-center gap-2">
+                <span className="h-2 w-2 rounded-full bg-red-400" />
+                <span className="h-2 w-2 rounded-full bg-yellow-400" />
+                <span className="h-2 w-2 rounded-full bg-green-400" />
+                <span className="ml-2 text-zinc-400">metadata.protocol.jsonld</span>
+              </div>
+              <span className="rounded-full border border-emerald-400/50 bg-emerald-400/10 px-2 py-0.5 text-[10px] text-emerald-300">
+                VECTOR-READY
+              </span>
+            </div>
+
+            <div className="mb-3 flex flex-wrap gap-2 text-[11px]">
+              <span className="rounded-full border border-zinc-600 px-2 py-1">metadata schema</span>
+              <span className="rounded-full border border-zinc-600 px-2 py-1">entity extraction</span>
+              <span className="rounded-full border border-zinc-600 px-2 py-1">citation readiness</span>
+            </div>
+
+            <pre className="overflow-x-auto rounded-xl border border-zinc-700 bg-black/60 p-4 text-sm leading-relaxed">
+              <code>{metadataSample}</code>
+            </pre>
+          </div>
         </div>
       </div>
     </section>

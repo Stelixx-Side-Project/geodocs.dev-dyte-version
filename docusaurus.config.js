@@ -491,7 +491,7 @@ const config = {
     ({
       image: '/img/dyte-docs-card.png',
       colorMode: {
-        defaultMode: 'light',
+        defaultMode: 'dark',
       },
       docs: {
         sidebar: {
@@ -512,7 +512,7 @@ const config = {
           {
             label: 'Start Here',
             to: '/guides/geo/fundamentals',
-            className: 'start-here-btn',
+            className: 'start-here-btn guides-top-header',
           },
           {
             label: 'Playbooks',
@@ -555,9 +555,9 @@ const config = {
           },
           {
             label: 'Start GEO Audit',
-            to: '/docs/geo-audit-checklist',
+            href: 'https://geolify.ai/geo-ai-visibility-audit?utm_source=geodocs.dev&utm_medium=referral&utm_campaign=brand_audit&utm_content=topnav_cta',
             position: 'right',
-            className: 'start-geo-audit-btn',
+            className: 'dev-portal-signup dev-portal-link start-geo-audit-btn',
           },
         ],
       },

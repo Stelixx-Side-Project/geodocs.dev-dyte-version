@@ -62,6 +62,7 @@ function HeroProduct({
         borderWidth: '1px',
       }}
       className={clsx(
+        'homepage__hero-product',
         'group cursor-pointer overflow-clip rounded-3xl from-primary/30 via-transparent to-transparent text-black transition-all hover:bg-gradient-to-tr hover:text-primary hover:no-underline dark:text-white',
         'w-[90vw] border-secondary-700 bg-secondary-900 hover:!border-primary dark:border-secondary-800 sm:w-[440px]',
       )}
@@ -91,6 +92,14 @@ function HeroProduct({
 function openDocSearch() {
   if (typeof window === 'undefined') return;
 
+  const docSearchButton = document.querySelector(
+    '.DocSearch-Button',
+  ) as HTMLButtonElement | null;
+  if (docSearchButton) {
+    docSearchButton.click();
+    return;
+  }
+
   window.dispatchEvent(
     new KeyboardEvent('keydown', {
       key: 'k',
@@ -117,7 +126,7 @@ export default function HeroSection() {
         <div className="flex flex-col items-center text-center">
           <Link
             to="/docs/geo-audit-checklist"
-            className="mb-6 rounded-full bg-secondary-900 px-4 py-1.5 text-sm font-medium text-primary shadow-sm hover:no-underline dark:bg-secondary-800"
+            className="homepage__hero-top-badge mb-6 rounded-full px-4 py-1.5 text-sm font-medium shadow-sm hover:no-underline"
           >
             ✨ Just launched: GEO Audit Checklist v1 - Download now →
           </Link>
@@ -166,14 +175,14 @@ export default function HeroSection() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-center">
             <Link
               href={GEO_AUDIT_TOOL_URL}
-              className="flex items-center justify-center rounded-md bg-[#00ED64] px-8 py-3 font-semibold text-black transition-colors hover:bg-[#00c553] hover:no-underline"
+              className="homepage__hero-cta-link homepage__hero-btn flex items-center justify-center hover:no-underline"
               target="_blank"
             >
               Start GEO Audit
             </Link>
             <Link
               to="/guides/geo"
-              className="flex items-center justify-center rounded-md border border-zinc-300 px-8 py-3 font-semibold text-black transition-colors hover:bg-zinc-100 hover:no-underline dark:border-zinc-700 dark:text-white dark:hover:bg-zinc-800"
+              className="homepage__hero-cta-link homepage__hero-btn flex items-center justify-center hover:no-underline"
             >
               Browse Artifacts
             </Link>
@@ -184,31 +193,49 @@ export default function HeroSection() {
               <img
                 src="https://svgl.app/library/perplexity.svg"
                 alt="Perplexity"
-                className="h-6 w-6 object-contain"
+                className="homepage__engine-logo"
                 loading="lazy"
               />
               <img
                 src="https://svgl.app/library/openai.svg"
                 alt="ChatGPT"
-                className="h-6 w-6 object-contain"
+                className="homepage__engine-logo"
                 loading="lazy"
               />
               <img
                 src="https://svgl.app/library/google.svg"
                 alt="Google AI Overviews"
-                className="h-6 w-6 object-contain"
+                className="homepage__engine-logo"
                 loading="lazy"
               />
               <img
                 src="https://svgl.app/library/anthropic_white.svg"
                 alt="Claude"
-                className="h-6 w-6 object-contain"
+                className="homepage__engine-logo"
                 loading="lazy"
               />
               <img
                 src="https://svgl.app/library/gemini.svg"
                 alt="Gemini"
-                className="h-6 w-6 object-contain"
+                className="homepage__engine-logo"
+                loading="lazy"
+              />
+              <img
+                src="https://svgl.app/library/deepseek.svg"
+                alt="DeepSeek"
+                className="homepage__engine-logo"
+                loading="lazy"
+              />
+              <img
+                src="https://svgl.app/library/xai_dark.svg"
+                alt="xAI Grok"
+                className="homepage__engine-logo"
+                loading="lazy"
+              />
+              <img
+                src="https://svgl.app/library/openrouter_dark.svg"
+                alt="OpenRouter"
+                className="homepage__engine-logo"
                 loading="lazy"
               />
             </div>

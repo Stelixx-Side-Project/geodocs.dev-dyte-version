@@ -15,9 +15,9 @@ export default function HelpSection({ className = '' }) {
           How can we help your GEO workflow today?
         </h2>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
-          <div className="rounded-lg bg-zinc-100 p-6 dark:bg-zinc-900">
+          <div className="homepage__help-card rounded-lg bg-zinc-100 p-6 dark:bg-zinc-900">
             <img
-              src="/static/landing-page/calendar.svg"
+              src="https://api.iconify.design/mdi/file-document-edit-outline.svg?color=%2300ed64"
               alt="Contribute content"
               width="48"
               height="48"
@@ -29,35 +29,35 @@ export default function HelpSection({ className = '' }) {
             </p>
             <Link
               href="/guides/geo"
-              className="text-primary dark:text-primary-100"
+              className="homepage__hero-cta-link text-primary dark:text-primary-100"
             >
               Go to GEO hub &rarr;
             </Link>
           </div>
 
-          <div className="rounded-lg bg-zinc-100 p-6 dark:bg-zinc-900">
+          <div className="homepage__help-card rounded-lg bg-zinc-100 p-6 dark:bg-zinc-900">
             <img
-              src="/static/landing-page/customer.svg"
-              alt="Community"
+              src="https://api.iconify.design/mdi/tools.svg?color=%2300ed64"
+              alt="Tools"
               width="48"
               height="48"
             />
-            <h3 className="my-3">Join the Community</h3>
+            <h3 className="my-3">Tools Ecosystem</h3>
             <p className="text-zinc-600 dark:text-zinc-400">
-              Discuss GEO playbooks, share learnings, and improve standards with
-              the wider contributor community.
+              Discover practical tools, templates, and integrations built
+              around the Geodocs operating model.
             </p>
             <Link
               href="/community-packages"
-              className="text-primary dark:text-primary-100"
+              className="homepage__hero-cta-link text-primary dark:text-primary-100"
             >
-              Explore community &rarr;
+              Explore tools &rarr;
             </Link>
           </div>
 
-          <div className="rounded-lg bg-zinc-100 p-6 dark:bg-zinc-900">
+          <div className="homepage__help-card rounded-lg bg-zinc-100 p-6 dark:bg-zinc-900">
             <img
-              src="/static/landing-page/chat.svg"
+              src="https://api.iconify.design/mdi/chat-question-outline.svg?color=%2300ed64"
               alt="FAQs"
               width="48"
               height="48"
@@ -67,7 +67,10 @@ export default function HelpSection({ className = '' }) {
               Browse common GEO/AEO implementation questions and practical
               answers.
             </p>
-            <Link href="/faq" className="text-primary dark:text-primary-100">
+            <Link
+              href="/faq"
+              className="homepage__hero-cta-link text-primary dark:text-primary-100"
+            >
               View FAQs &rarr;
             </Link>
           </div>

@@ -120,7 +120,7 @@ export default function ResourcesSection() {
           </div>
           <Link
             to="/guides/geo/proof"
-            className="font-jakarta text-sm font-semibold text-primary"
+            className="homepage__hero-cta-link font-jakarta text-sm font-semibold text-primary"
           >
             Measurement resources <ArrowRightFilled className="ml-1" />
           </Link>

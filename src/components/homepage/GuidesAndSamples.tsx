@@ -62,7 +62,7 @@ function Guide({ title, text, icon: Icon, link }: (typeof guides)[0]) {
   return (
     <Link
       to={link}
-      className="group flex cursor-pointer items-start gap-2 rounded-lg border-2 border-transparent p-3 text-inherit transition-colors hover:border-primary hover:text-primary"
+      className="homepage__toolkit-card group flex cursor-pointer items-start gap-2 rounded-lg border-2 border-transparent p-3 text-inherit transition-colors hover:border-primary hover:text-primary"
     >
       <Icon className="h-6 w-6" />
 
@@ -78,7 +78,7 @@ function Guide({ title, text, icon: Icon, link }: (typeof guides)[0]) {
 
 function Sample({ title, format, actionLabel, actionLink }: Sample) {
   return (
-    <div className="group flex cursor-pointer items-center justify-between rounded-lg border-2 border-transparent p-3 text-text-400/60 transition-colors hover:border-primary hover:text-primary">
+    <div className="homepage__toolkit-card group flex cursor-pointer items-center justify-between rounded-lg border-2 border-transparent p-3 text-text-400/60 transition-colors hover:border-primary hover:text-primary">
       <div className="flex flex-col">
         <h4 className="mb-1 text-black group-hover:text-primary dark:text-white">
           {title}
@@ -89,7 +89,7 @@ function Sample({ title, format, actionLabel, actionLink }: Sample) {
       <div className="flex items-center gap-2.5">
         <Link
           to={actionLink}
-          className="flex items-center gap-1 rounded-lg border border-secondary-700 py-1 px-3 font-semibold text-inherit transition-colors group-hover:border-primary group-hover:bg-primary group-hover:text-white"
+          className="homepage__hero-cta-link flex items-center gap-1 rounded-lg border border-secondary-700 py-1 px-3 font-semibold text-inherit transition-colors group-hover:border-primary group-hover:bg-primary group-hover:text-white"
         >
           <span>{actionLabel}</span>
         </Link>
@@ -105,7 +105,10 @@ export default function GuidesAndSamples() {
         <div className="mb-8 flex items-center justify-between">
           <h3 className="heading-serif m-0">Build your GEO Strategy</h3>
 
-          <Link to="/guides/geo/strategy" className="font-jakarta text-sm font-semibold">
+          <Link
+            to="/guides/geo/strategy"
+            className="homepage__hero-cta-link font-jakarta text-sm font-semibold"
+          >
             View all playbooks <ArrowRightFilled className="ml-1" />
           </Link>
         </div>
@@ -128,7 +131,10 @@ export default function GuidesAndSamples() {
         <div className="mb-8 flex items-center justify-between">
           <h3 className="heading-serif m-0">Tactical Artifacts</h3>
 
-          <Link to="/guides/geo/execution" className="font-jakarta text-sm font-semibold">
+          <Link
+            to="/guides/geo/execution"
+            className="homepage__hero-cta-link font-jakarta text-sm font-semibold"
+          >
             View all artifacts <ArrowRightFilled className="ml-1" />
           </Link>
         </div>

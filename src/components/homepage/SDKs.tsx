@@ -1,13 +1,21 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
+import {
+  Code,
+  HelpCircle,
+  Layers,
+  FileText,
+  Link2,
+  Terminal,
+} from 'react-feather';
 
-function SDK({ icon, to, name }: { icon: string; name: string; to?: string }) {
+function SDK({ icon: Icon, to, name }: { icon: any; name: string; to?: string }) {
   return (
     <Link
       to={to}
-      className="flex cursor-pointer items-center rounded-lg border border-secondary-700 p-2.5 text-inherit hover:border-primary hover:text-primary hover:no-underline"
+      className="homepage__layer-card flex cursor-pointer items-center rounded-lg border border-secondary-700 p-2.5 text-inherit hover:border-primary hover:text-primary hover:no-underline"
     >
-      <img src={icon} className="mr-2 h-7 w-7" />
+      <Icon className="mr-2 h-7 w-7" />
       <span className="font-medium">{name}</span>
     </Link>
   );
@@ -40,17 +48,17 @@ export default function SDKs() {
           <SDK
             name="JSON-LD Entities"
             to="/guides/geo/fundamentals"
-            icon="/static/landing-page/sdk-icons/react.png"
+            icon={Code}
           />
           <SDK
             name="FAQ Schema"
             to="/guides/geo/strategy"
-            icon="/static/landing-page/sdk-icons/angular.png"
+            icon={HelpCircle}
           />
           <SDK
             name="Organization Schema"
             to="/guides/geo/execution"
-            icon="/static/landing-page/sdk-icons/html.png"
+            icon={Layers}
           />
         </div>
       </div>
@@ -66,17 +74,17 @@ export default function SDKs() {
           <SDK
             name="Markdown-First Formatting"
             to="/guides/geo/execution"
-            icon="/static/landing-page/sdk-icons/js.png"
+            icon={FileText}
           />
           <SDK
             name="Entity Linking"
             to="/guides/geo/operations"
-            icon="/static/landing-page/sdk-icons/react.png"
+            icon={Link2}
           />
           <SDK
             name="Robot Directives"
             to="/guides/geo/operations"
-            icon="/static/landing-page/sdk-icons/flutter.png"
+            icon={Terminal}
           />
         </div>
       </div>
