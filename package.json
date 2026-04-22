@@ -9,6 +9,8 @@
     "dev": "docusaurus start",
     "build": "docusaurus build",
     "build:cf": "npm run build",
+    "content:sync": "node bin/sync-geodocs-content.mjs",
+    "content:sync:dry": "node bin/sync-geodocs-content.mjs --dry-run",
     "deploy:cf": "npm run build:cf && npx wrangler deploy",
     "deploy:cf:dry": "npm run build:cf && npx wrangler deploy --dry-run",
     "swizzle": "docusaurus swizzle",

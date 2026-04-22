@@ -23,6 +23,7 @@
     }
   },
   "analytics_engine_datasets": [
-    { "binding": "ANALYTICS_ENGINE", "dataset": "analytics_events" }
+    { "binding": "ANALYTICS_ENGINE", "dataset": "analytics_events" },
+    { "binding": "ANALYTICS", "dataset": "website_events" }
   ]
 }
