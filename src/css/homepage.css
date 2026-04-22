@@ -1,0 +1,458 @@
+/**
+ * Homepage Styling - MongoDB-inspired Design System
+ * Applies design system tokens to geodocs homepage sections
+ * Follows design-system.md adaptation layer for geodocs (sections 10.2-10.4)
+ */
+
+/* ============================================
+   HOMEPAGE HERO SECTION
+   ============================================
+   Dark forest background with green accents
+   Communicates urgency of GEO transition
+*/
+
+.homepage__hero {
+  background-color: var(--ds-color-forest-black);
+  color: var(--ds-color-pure-white);
+  padding: var(--ds-space-32);
+  border-radius: var(--ds-radius-hero);
+  position: relative;
+  overflow: hidden;
+}
+
+.homepage__hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 237, 100, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.homepage__hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.homepage__hero h1 {
+  font-family: var(--ds-font-display-serif);
+  font-size: var(--ds-type-display-hero-size);
+  font-weight: 400;
+  line-height: var(--ds-type-display-hero-line-height);
+  margin: 0;
+  margin-bottom: var(--ds-space-20);
+  color: var(--ds-color-pure-white);
+}
+
+.homepage__hero-accent {
+  color: var(--ds-color-mongodb-green);
+  position: relative;
+  display: inline-block;
+}
+
+.homepage__hero-accent::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--ds-color-mongodb-green), transparent);
+}
+
+.homepage__hero p {
+  font-size: var(--ds-type-body-large-size);
+  font-weight: 400;
+  line-height: var(--ds-type-body-large-line-height);
+  color: var(--ds-color-light-input);
+  margin: 0 0 var(--ds-space-24) 0;
+  max-width: 600px;
+}
+
+.homepage__hero-cta {
+  display: inline-flex;
+  gap: var(--ds-space-12);
+  margin-top: var(--ds-space-24);
+}
+
+.homepage__hero-btn {
+  @apply ds-btn-primary;
+  font-size: var(--ds-type-button-size);
+  padding: var(--ds-space-12) var(--ds-space-24);
+}
+
+.homepage__hero-btn-secondary {
+  background-color: transparent;
+  color: var(--ds-color-mongodb-green);
+  border: 2px solid var(--ds-color-mongodb-green);
+  @apply ds-btn-primary;
+  font-size: var(--ds-type-button-size);
+  padding: var(--ds-space-12) var(--ds-space-24);
+  transition: all var(--ds-transition-fast);
+}
+
+.homepage__hero-btn-secondary:hover {
+  background-color: var(--ds-color-mongodb-green);
+  color: var(--ds-color-forest-black);
+}
+
+/* ============================================
+   SECTION HEADERS - Strategic claim + execution cue
+   ============================================
+*/
+
+.homepage__section-header {
+  margin-bottom: var(--ds-space-32);
+}
+
+.homepage__section-label {
+  @apply ds-code-label;
+  color: var(--ds-color-mongodb-green);
+  margin-bottom: var(--ds-space-8);
+  display: block;
+}
+
+.homepage__section-title {
+  font-size: var(--ds-type-section-heading-size);
+  font-weight: var(--ds-type-section-heading-weight);
+  line-height: var(--ds-type-section-heading-line-height);
+  color: var(--ds-color-forest-black);
+  margin: 0 0 var(--ds-space-12) 0;
+}
+
+html[data-theme='dark'] .homepage__section-title {
+  color: var(--ds-color-pure-white);
+}
+
+.homepage__section-subtitle {
+  font-size: var(--ds-type-body-size);
+  font-weight: 400;
+  line-height: var(--ds-type-body-line-height);
+  color: var(--ds-color-text-100);
+  margin: 0;
+  max-width: 600px;
+}
+
+/* ============================================
+   CARDS - Artifact-first, action-first links
+   ============================================
+*/
+
+.homepage__card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--ds-space-24);
+  margin-top: var(--ds-space-24);
+}
+
+.homepage__card {
+  @apply ds-card;
+  transition: all var(--ds-transition-normal);
+  display: flex;
+  flex-direction: column;
+  padding: var(--ds-space-24);
+  cursor: pointer;
+}
+
+.homepage__card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ds-shadow-standard);
+}
+
+html[data-theme='dark'] .homepage__card {
+  background-color: var(--ds-color-deep-teal);
+  border-color: var(--ds-color-teal-gray);
+}
+
+.homepage__card-artifact-type {
+  @apply ds-code-micro;
+  color: var(--ds-color-mongodb-green);
+  margin-bottom: var(--ds-space-8);
+}
+
+.homepage__card-title {
+  font-size: var(--ds-type-subheading-size);
+  font-weight: var(--ds-type-subheading-weight);
+  line-height: var(--ds-type-subheading-line-height);
+  color: var(--ds-color-forest-black);
+  margin: 0 0 var(--ds-space-8) 0;
+}
+
+html[data-theme='dark'] .homepage__card-title {
+  color: var(--ds-color-pure-white);
+}
+
+.homepage__card-subtitle {
+  font-size: var(--ds-type-body-light-size);
+  line-height: var(--ds-type-body-light-line-height);
+  color: var(--ds-color-text-100);
+  margin: 0 0 var(--ds-space-12) 0;
+  flex-grow: 1;
+}
+
+.homepage__card-role {
+  font-size: var(--ds-type-caption-size);
+  color: var(--ds-color-action-blue);
+  font-weight: 500;
+  margin-top: auto;
+  padding-top: var(--ds-space-12);
+  border-top: 1px solid var(--ds-color-silver-teal);
+}
+
+html[data-theme='dark'] .homepage__card-role {
+  color: var(--ds-color-mongodb-green);
+  border-top-color: var(--ds-color-teal-gray);
+}
+
+/* ============================================
+   COMPARISON TABLE - Cost/benefit visibility
+   ============================================
+*/
+
+.homepage__comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--ds-space-24);
+  background-color: var(--ds-color-pure-white);
+  border: 1px solid var(--ds-color-silver-teal);
+  border-radius: var(--ds-radius-card);
+  overflow: hidden;
+}
+
+html[data-theme='dark'] .homepage__comparison-table {
+  background-color: var(--ds-color-deep-teal);
+  border-color: var(--ds-color-teal-gray);
+}
+
+.homepage__comparison-table th {
+  background-color: var(--ds-color-forest-black);
+  color: var(--ds-color-pure-white);
+  padding: var(--ds-space-16);
+  font-size: var(--ds-type-body-light-size);
+  font-weight: var(--ds-type-nav-ui-weight);
+  text-align: left;
+  border: none;
+}
+
+.homepage__comparison-table td {
+  padding: var(--ds-space-16);
+  border-top: 1px solid var(--ds-color-silver-teal);
+  font-size: var(--ds-type-body-light-size);
+}
+
+html[data-theme='dark'] .homepage__comparison-table td {
+  border-top-color: var(--ds-color-teal-gray);
+}
+
+.homepage__comparison-table tr:hover td {
+  background-color: rgba(0, 237, 100, 0.04);
+}
+
+.homepage__comparison-checkmark {
+  color: var(--ds-color-mongodb-green);
+  font-weight: bold;
+  font-size: var(--ds-type-body-large-size);
+}
+
+.homepage__comparison-x {
+  color: #f87171;
+  font-weight: bold;
+}
+
+/* ============================================
+   FRAMEWORK SECTIONS - Learn, Plan, Execute, Measure, Operate
+   ============================================
+*/
+
+.homepage__framework-step {
+  margin-bottom: var(--ds-space-32);
+  padding: var(--ds-space-24);
+  border-left: 4px solid var(--ds-color-mongodb-green);
+  background-color: rgba(0, 237, 100, 0.02);
+  border-radius: var(--ds-radius-standard);
+}
+
+html[data-theme='dark'] .homepage__framework-step {
+  background-color: rgba(0, 237, 100, 0.04);
+}
+
+.homepage__framework-step-number {
+  @apply ds-code-label;
+  color: var(--ds-color-mongodb-green);
+  font-size: var(--ds-type-small-size);
+  margin-bottom: var(--ds-space-12);
+}
+
+.homepage__framework-step h3 {
+  font-size: var(--ds-type-subheading-size);
+  font-weight: var(--ds-type-subheading-weight);
+  color: var(--ds-color-forest-black);
+  margin: 0 0 var(--ds-space-12) 0;
+}
+
+html[data-theme='dark'] .homepage__framework-step h3 {
+  color: var(--ds-color-pure-white);
+}
+
+.homepage__framework-step p {
+  font-size: var(--ds-type-body-light-size);
+  line-height: var(--ds-type-body-light-line-height);
+  color: var(--ds-color-text-100);
+  margin: 0;
+}
+
+/* ============================================
+   CTA SECTION - Call to action, high visibility
+   ============================================
+*/
+
+.homepage__cta-section {
+  background: linear-gradient(135deg, var(--ds-color-forest-black) 0%, var(--ds-color-deep-teal) 100%);
+  color: var(--ds-color-pure-white);
+  padding: var(--ds-space-32);
+  border-radius: var(--ds-radius-hero);
+  text-align: center;
+  margin-top: var(--ds-space-32);
+}
+
+.homepage__cta-title {
+  font-size: var(--ds-type-display-secondary-size);
+  font-weight: 400;
+  line-height: var(--ds-type-display-secondary-line-height);
+  margin: 0 0 var(--ds-space-12) 0;
+  color: var(--ds-color-pure-white);
+}
+
+.homepage__cta-description {
+  font-size: var(--ds-type-body-size);
+  line-height: var(--ds-type-body-line-height);
+  color: var(--ds-color-light-input);
+  margin: 0 0 var(--ds-space-24) 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homepage__cta-button {
+  @apply ds-btn-primary;
+  background-color: var(--ds-color-mongodb-green);
+  color: var(--ds-color-forest-black);
+  border-color: var(--ds-color-mongodb-green);
+  font-size: var(--ds-type-button-size);
+  padding: var(--ds-space-12) var(--ds-space-32);
+}
+
+.homepage__cta-button:hover {
+  background-color: var(--ds-color-pure-white);
+  color: var(--ds-color-forest-black);
+  border-color: var(--ds-color-pure-white);
+  transform: scale(1.05);
+}
+
+/* ============================================
+   ROLE SWITCHER - ICP lane selection
+   ============================================
+*/
+
+.homepage__role-switcher {
+  display: flex;
+  gap: var(--ds-space-12);
+  margin-bottom: var(--ds-space-24);
+  flex-wrap: wrap;
+}
+
+.homepage__role-chip {
+  padding: var(--ds-space-10) var(--ds-space-16);
+  border-radius: var(--ds-radius-pill);
+  border: 1px solid var(--ds-color-silver-teal);
+  background-color: transparent;
+  color: var(--ds-color-forest-black);
+  font-size: var(--ds-type-body-light-size);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--ds-transition-fast);
+}
+
+html[data-theme='dark'] .homepage__role-chip {
+  border-color: var(--ds-color-teal-gray);
+  color: var(--ds-color-light-input);
+}
+
+.homepage__role-chip:hover {
+  border-color: var(--ds-color-action-blue);
+  background-color: rgba(0, 108, 250, 0.08);
+}
+
+.homepage__role-chip.active {
+  background-color: var(--ds-color-action-blue);
+  color: var(--ds-color-pure-white);
+  border-color: var(--ds-color-action-blue);
+}
+
+html[data-theme='dark'] .homepage__role-chip.active {
+  background-color: var(--ds-color-mongodb-green);
+  color: var(--ds-color-forest-black);
+  border-color: var(--ds-color-mongodb-green);
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================
+*/
+
+@media (max-width: 768px) {
+  .homepage__hero h1 {
+    font-size: 3rem;
+    margin-bottom: var(--ds-space-16);
+  }
+
+  .homepage__hero p {
+    font-size: var(--ds-type-body-size);
+  }
+
+  .homepage__card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .homepage__section-title {
+    font-size: var(--ds-type-subheading-size);
+  }
+
+  .homepage__cta-title {
+    font-size: var(--ds-type-display-secondary-size);
+  }
+
+  .homepage__cta-section {
+    padding: var(--ds-space-24);
+  }
+}
+
+/* ============================================
+   ANIMATION & TRANSITIONS
+   ============================================
+*/
+
+@media (prefers-reduced-motion: no-preference) {
+  .homepage__card {
+    transition: all var(--ds-transition-normal) ease-out;
+  }
+
+  .homepage__hero-btn,
+  .homepage__cta-button {
+    transition: all var(--ds-transition-fast) ease-in-out;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .homepage__card,
+  .homepage__hero-btn,
+  .homepage__cta-button {
+    transition: none;
+  }
+
+  .ping::after {
+    animation: none;
+  }
+}

@@ -1,3 +1,16 @@
+/* ============================================
+   DESIGN SYSTEM IMPORT
+   ============================================
+   Import MongoDB-inspired design tokens and components
+   Provides: CSS variables, color palette, typography, shadows, spacing
+*/
+@import './design-tokens.css';
+@import './homepage.css';
+
+/* ============================================
+   FONT FACES
+   ============================================ */
+
 @font-face {
   font-family: 'Inter';
   font-weight: 100 900;
@@ -132,6 +145,53 @@
   }
 }
 
+/* ============================================
+   DESIGN SYSTEM COLOR MAPPING
+   ============================================
+   Docusaurus Docs Tokens with MongoDB-inspired palette
+*/
+:root {
+  /* Primary brand - map to design system action blue */
+  --docs-color-primary: var(--ds-color-action-blue);    /* #006cfa */
+  --docs-color-primary-tint: rgba(0, 108, 250, 0.16);
+  --docs-color-primary-tint-light: rgba(0, 108, 250, 0.24);
+
+  /* Forest accent - MongoDB green for special highlights */
+  --docs-color-forest-accent: var(--ds-color-mongodb-green);  /* #00ed64 */
+
+  /* Borders and backgrounds */
+  --docs-color-border: var(--ds-color-silver-teal);     /* #b8c4c2 */
+  --docs-color-text: var(--ds-color-black);             /* #000000 */
+  --docs-color-text-100: var(--ds-color-cool-gray);     /* #5c6c75 */
+
+  --docs-color-background: var(--ds-color-pure-white);  /* #ffffff */
+  --docs-color-background-100: #f8f8f8;
+  --docs-color-background-200: #efefef;
+  --docs-color-background-300: var(--ds-color-silver-teal);
+
+  /* Code and prism theming */
+  --docs-color-code-background: #f6f8fa;
+
+  /* Android and Apple platform colors */
+  --docs-color-android: var(--ds-color-mongodb-green);
+  --docs-color-apple: var(--docs-color-text) !important;
+}
+
+/* Dark mode - forest and teal aesthetic */
+[data-theme='dark'] {
+  --docs-color-primary: var(--ds-color-action-blue);    /* Keep blue for consistency */
+  --docs-color-border: var(--ds-color-teal-gray);       /* #3d4f58 */
+  --docs-color-text: var(--ds-color-pure-white);        /* #ffffff */
+  --docs-color-text-100: var(--ds-color-light-input);   /* #e8edeb */
+
+  --docs-color-background: var(--ds-color-forest-black);    /* #001e2b - forest black */
+  --docs-color-background-100: var(--ds-color-deep-teal);   /* #1c2d38 */
+  --docs-color-background-200: #2a2a2a;
+  --docs-color-background-300: var(--ds-color-teal-gray);   /* #3d4f58 */
+
+  --docs-color-code-background: #1e1e1e;
+}
+
 /* Fonts */
 
 pre,
@@ -144,71 +204,30 @@ body {
   --dyte-colors-video-bg: 50 50 50;
 }
 
-/* Dyte Docs Tokens */
-:root {
-  --docs-color-primary: #2160fd;
-  /* --docs-color-primary-100: #1a90ff; */
-  --docs-color-primary-tint: rgba(33, 96, 253, 0.16);
-  --docs-color-primary-tint-light: rgba(33 96 253/0.24);
-
-  --docs-color-border: #dadde1;
-
-  --docs-color-text: #000000;
-  --docs-color-text-100: #646464;
-
-  --docs-color-background: #ffffff;
-  --docs-color-background-100: #f8f8f8;
-  --docs-color-background-200: #efefef;
-  --docs-color-background-300: #dcdcdc;
-
-  /* Color from prism themes */
-  --docs-color-code-background: #f6f8fa;
-
-  --docs-color-android: #44db85;
-  --docs-color-apple: var(--docs-color-text) !important;
-}
-
-[data-theme='dark'] {
-  --docs-color-border: #2e2e2e;
-
-  --docs-color-text: #ffffff;
-  --docs-color-text-100: #b4b4b4;
-
-  --docs-color-background: #161616;
-  --docs-color-background-100: #1c1c1c;
-  --docs-color-background-200: #2a2a2a;
-  --docs-color-background-300: #2e2e2e;
-
-  --docs-color-code-background: #1e1e1e;
-}
-
-/* Docusaurus Theming */
+/* ============================================
+   DOCUSAURUS THEMING - Integration with Design System
+   ============================================ */
 
 :root {
   /* Default values */
 
-  --ifm-spacing-horizontal: 1.5rem;
-  --ifm-navbar-padding-horizontal: 0.75rem;
+  --ifm-spacing-horizontal: var(--ds-space-24);         /* 24px */
+  --ifm-navbar-padding-horizontal: var(--ds-space-12);  /* 12px */
 
-  --ifm-font-family-base: 'Inter', system-ui, -apple-system, Segoe UI, Roboto,
-    Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI',
-    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
+  --ifm-font-family-base: var(--ds-font-body-ui);
+  --ifm-font-family-monospace: var(--ds-font-code-label);
 
-  --ifm-font-family-monospace: 'Fira Code', SFMono-Regular, Menlo, Monaco,
-    Consolas, 'Liberation Mono', 'Courier New', monospace;
-
-  /* Theme colors */
-  --ifm-color-primary: #2160fd;
-  --ifm-color-primary-dark: #1959fc;
-  --ifm-color-primary-darker: #0f51f8;
-  --ifm-color-primary-darkest: #0042e7;
-  --ifm-color-primary-light: #3d72f8;
-  --ifm-color-primary-lighter: #477af8;
-  --ifm-color-primary-lightest: #6791fc;
+  /* Theme colors - mapped to design system */
+  --ifm-color-primary: var(--ds-color-action-blue);         /* #006cfa */
+  --ifm-color-primary-dark: var(--ds-color-hover-blue);     /* #3860be */
+  --ifm-color-primary-darker: #0042e7;
+  --ifm-color-primary-darkest: #002ba8;
+  --ifm-color-primary-light: #3873f8;
+  --ifm-color-primary-lighter: #5a8dff;
+  --ifm-color-primary-lightest: #7ba9ff;
 
   --ifm-navbar-shadow: none;
-  --ifm-toc-border-color: #dedede;
+  --ifm-toc-border-color: var(--ds-color-silver-teal);
 
   --ifm-table-border-color: var(--docs-color-border);
   --code-border-color: var(--docs-color-border);
@@ -218,41 +237,67 @@ body {
 
   --ifm-breadcrumb-item-background-active: transparent;
   --ifm-breadcrumb-padding-horizontal: 0;
+
+  /* Design system z-index */
+  --ifm-z-index-fixed: var(--ds-z-fixed);
+  --ifm-z-index-dropdown: var(--ds-z-dropdown);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark mode - forest aesthetic */
 html[data-theme='dark'] {
-  --ifm-link-color: #1a90ff;
-  --ifm-tabs-color-active-border: #1a90ff;
-  --ifm-tabs-color-active: #1a90ff;
+  --ifm-link-color: var(--ds-color-action-blue);
+  --ifm-tabs-color-active-border: var(--ds-color-mongodb-green);
+  --ifm-tabs-color-active: var(--ds-color-mongodb-green);
 
-  --ifm-color-primary: #1a90ff;
+  --ifm-color-primary: var(--ds-color-action-blue);
 
-  --ifm-footer-background-color: #1c1c1c;
-  --ifm-background-surface-color: #161616;
-  --ifm-background-color: #161616;
-  --ifm-toc-border-color: #2e2e2e;
+  --ifm-footer-background-color: var(--ds-color-deep-teal);
+  --ifm-background-surface-color: var(--ds-color-forest-black);
+  --ifm-background-color: var(--ds-color-forest-black);
+  --ifm-toc-border-color: var(--ds-color-teal-gray);
 
-  --ifm-color-content: #e7e7e7;
+  --ifm-color-content: var(--ds-color-light-input);
 
-  --docusaurus-highlighted-code-line-bg: rgba(105, 105, 105, 0.3);
+  --docusaurus-highlighted-code-line-bg: rgba(28, 45, 56, 0.5);
 }
+
+/* ============================================
+   NAVBAR & NAVIGATION
+   ============================================ */
 
 nav.navbar {
   border-bottom: 1px solid var(--ifm-toc-border-color);
+  background-color: var(--docs-color-background);
 }
+
+html[data-theme='dark'] nav.navbar {
+  background-color: var(--ds-color-deep-teal);
+  box-shadow: var(--ds-shadow-subtle);
+}
+
+/* ============================================
+   CODE STYLING
+   ============================================ */
 
 pre.prism-code {
   border: 1px solid var(--code-border-color);
+  border-radius: var(--ds-radius-standard);
+  background-color: var(--docs-color-code-background) !important;
 }
 
 .navbar__item,
 .menu__link {
-  font-size: 14px;
+  font-size: var(--ds-type-body-light-size);
+  font-weight: 500;
+  transition: color var(--ds-transition-fast);
 }
 
 .menu__link {
-  border-radius: 4px 0 0 4px;
+  border-radius: var(--ds-radius-standard) 0 0 var(--ds-radius-standard);
+
+  &:hover {
+    background-color: rgba(0, 108, 250, 0.08);
+  }
 }
 
 .menu__list-item-collapsible:hover {
@@ -260,7 +305,8 @@ pre.prism-code {
 }
 
 ul.menu__list > li > a.menu__link--active {
-  border-right: 1px solid var(--ifm-color-primary);
+  border-right: 3px solid var(--ds-color-mongodb-green);
+  color: var(--ds-color-mongodb-green);
 }
 
 nav.menu {
@@ -268,65 +314,82 @@ nav.menu {
   scrollbar-gutter: auto;
 }
 
+/* ============================================
+   BADGES - Status indicators
+   ============================================ */
+
 .new-badge::after,
 .deprecated-badge::after {
-  font-size: 11px;
-  @apply inline-flex items-center justify-center rounded-sm;
-  @apply ml-1.5 px-1 py-0;
+  font-size: var(--ds-type-small-size);
+  @apply inline-flex items-center justify-center rounded-ds-pill;
+  @apply ml-1.5 px-ds-10 py-ds-4;
+  font-weight: var(--ds-type-small-weight);
+  letter-spacing: var(--ds-type-small-letter-spacing);
 }
 
 .new-badge::after {
   content: 'NEW';
-  @apply bg-blue-100 text-blue-900;
-  @apply dark:bg-blue-900 dark:text-blue-100;
+  background-color: var(--ds-color-action-blue);
+  color: var(--ds-color-pure-white);
+}
+
+html[data-theme='dark'] .new-badge::after {
+  background-color: var(--ds-color-teal-active);
+  color: var(--ds-color-forest-black);
 }
 
 .sidebar-menu .new-badge::after {
-  @apply border border-solid border-blue-400 bg-blue-100 text-blue-900;
+  border: 1px solid var(--ds-color-mongodb-green);
+  background-color: transparent;
+  color: var(--ds-color-mongodb-green);
 }
 
 .deprecated-badge::after {
   content: 'DEPRECATED';
-  @apply bg-red-100 text-red-900;
+  background-color: #f87171;
+  color: var(--ds-color-pure-white);
 }
 
+/* ============================================
+   FOOTER - Brand and navigation footer
+   ============================================ */
+
 .footer__description {
-  @apply text-text-400;
-  font-size: 14px;
+  font-size: var(--ds-type-body-light-size);
+  color: var(--ds-color-text-100);
 }
 
 .footer__copyright {
-  margin-top: 32px;
-  font-size: 14px;
-  @apply text-text-400;
+  margin-top: var(--ds-space-32);
+  font-size: var(--ds-type-caption-size);
+  color: var(--ds-color-text-100);
 }
 
 .footer__row {
   display: flex;
+  align-items: flex-start;
+  gap: var(--ds-space-24);
 }
 
 .footer__cta {
-  padding-right: 24px;
-  font-size: 14px;
+  padding-right: var(--ds-space-24);
+  font-size: var(--ds-type-body-light-size);
 }
 
 .footer__cta p {
   margin: 0;
+  margin-bottom: var(--ds-space-12);
 }
 
 .footer__cta a {
-  --ifm-link-hover-color: #fff;
-  margin-top: 0.25rem;
+  @apply ds-btn-primary;
   display: inline-block;
-  padding: 0.25rem 1.5rem;
-  border-radius: 4px;
-  background-color: theme('colors.primary.200');
-  color: #ffffff;
-  text-decoration: none;
+  margin-top: var(--ds-space-8);
 }
 
 .footer__cta a:hover {
-  background-color: var(--ifm-color-primary-darker);
+  background-color: var(--ds-color-dark-green);
+  transform: scale(1.05);
 }
 
 .footer__data {
@@ -335,22 +398,49 @@ nav.menu {
 
 .footer__row .links {
   flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--ds-space-24);
 }
 
 .footer__title {
-  font-size: 14px;
-  font-weight: normal;
-  @apply mb-2 text-text-400;
+  font-size: var(--ds-type-code-label-size);
+  font-weight: var(--ds-type-code-label-weight);
+  letter-spacing: var(--ds-type-code-label-letter-spacing);
+  text-transform: uppercase;
+  color: var(--ds-color-mongodb-green);
+  margin-bottom: var(--ds-space-12);
+  display: block;
+}
+
+html[data-theme='dark'] .footer__title {
+  color: var(--ds-color-mongodb-green);
 }
 
 .footer__item {
-  font-size: 14px;
-  font-weight: normal;
+  font-size: var(--ds-type-body-light-size);
+  font-weight: 400;
+  margin-bottom: var(--ds-space-8);
 }
 
-.footer__link-item:hover {
+.footer__link-item {
+  color: var(--ds-color-text-100);
   text-decoration: none;
+  transition: color var(--ds-transition-fast);
+
+  &:hover {
+    color: var(--ds-color-action-blue);
+    text-decoration: underline;
+  }
 }
+
+html[data-theme='dark'] .footer__link-item:hover {
+  color: var(--ds-color-mongodb-green);
+}
+
+/* ============================================
+   NAVBAR SIDEBAR
+   ============================================ */
 
 .navbar-sidebar__item {
   padding-right: 0;
@@ -358,25 +448,54 @@ nav.menu {
 
 .navbar-sidebar__back {
   background: none;
-  font-size: 14px;
+  font-size: var(--ds-type-body-light-size);
+  color: var(--ds-color-action-blue);
+
+  &:hover {
+    color: var(--ds-color-hover-blue);
+  }
 }
+
+/* ============================================
+   STATUS INDICATORS
+   ============================================ */
 
 .ping::after {
   display: inline-block;
   content: '';
-  background: theme('colors.primary.200');
-  width: 4px;
-  height: 4px;
-  border-radius: 4px;
-  margin-left: 4px;
+  background: var(--ds-color-mongodb-green);
+  width: 6px;
+  height: 6px;
+  border-radius: var(--ds-radius-full);
+  margin-left: var(--ds-space-8);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* ============================================
+   DEV PORTAL LINKS
+   ============================================ */
+
 .dev-portal-link {
-  background-color: theme('colors.primary.200');
-  border-radius: 4px;
-  transition-property: all;
-  padding: 0.25rem 0.75rem !important;
-  margin: 0 0.5rem;
+  background-color: var(--ds-color-action-blue);
+  border-radius: var(--ds-radius-pill);
+  transition: all var(--ds-transition-fast);
+  padding: var(--ds-space-8) var(--ds-space-16) !important;
+  margin: 0 var(--ds-space-8);
+  color: var(--ds-color-pure-white);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ds-space-8);
+  font-weight: var(--ds-type-button-weight);
+  font-size: var(--ds-type-button-size);
 }
 
 .dev-portal-link:last-child {
@@ -386,13 +505,16 @@ nav.menu {
 .dev-portal-link svg {
   display: inline-block;
   vertical-align: middle;
-  margin-bottom: 0.2rem;
+  width: 16px;
+  height: 16px;
 }
 
 .dev-portal-signup {
-  --ifm-link-hover-color: #fff;
-  --ifm-navbar-link-hover-color: #fff;
-  color: #fff;
+  --ifm-link-hover-color: var(--ds-color-pure-white);
+  --ifm-navbar-link-hover-color: var(--ds-color-pure-white);
+  color: var(--ds-color-pure-white);
+  background-color: var(--ds-color-dark-green);
+  border: 1px solid var(--ds-color-dark-green);
 }
 
 .dev-portal-signup svg {
@@ -400,7 +522,10 @@ nav.menu {
 }
 
 .dev-portal-signup:hover {
-  background-color: var(--ifm-color-primary-darker);
+  background-color: var(--ds-color-mongodb-green);
+  border-color: var(--ds-color-mongodb-green);
+  color: var(--ds-color-forest-black);
+  transform: translateX(2px);
 }
 
 .dev-portal-login {
