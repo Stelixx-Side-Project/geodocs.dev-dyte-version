@@ -68,14 +68,22 @@ You can contribute by:
 
 ## Code Contribution
 
-1. Checkout the latest `main` branch to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
-2. Check the issue tracker to make sure someone already hasn't requested it and/or contributed to it.
-3. Fork it!
-4. Create your feature branch: `git checkout -b feature/my-new-feature`
-5. Add your changes: `git add .`
-6. Commit your changes: `git commit -am 'feat: Add some feature'`
-7. Push to the branch: `git push -u origin feature/my-new-feature`
-8. Submit a pull request :sunglasses:
+1. Start from the latest `main`.
+2. Create a feature branch: `git checkout -b feature/my-new-feature`.
+3. Install dependencies: `npm install`.
+4. Run local docs: `npm start`.
+5. Run checks before committing:
+
+```sh
+npm run lint
+npm run typecheck
+npm run build
+```
+
+6. Stage only intended files: `git add <file1> <file2>`.
+7. Commit with conventional format, for example: `git commit -m "feat: add geo audit checklist docs"`.
+8. Push your branch: `git push -u origin feature/my-new-feature`.
+9. Open a pull request.
 
 ### Pull Requests
 

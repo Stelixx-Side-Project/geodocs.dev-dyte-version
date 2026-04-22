@@ -1,3 +1,23 @@
+## Unreleased (2026-04-23)
+
+### Features
+
+- Added Geodocs foundation and taxonomy documentation for GEO/AEO content operations.
+- Added GEO article sample set under `_docs/article_samples` for strategy, execution, and proof use cases.
+- Added GEO checklist content and homepage IA updates for Start Here, Playbooks, Artifacts, Standards, and Tools.
+- Added content synchronization workflow (`content:sync`) to pull and normalize docs content into this UI repository.
+
+### Design and UX
+
+- Added MongoDB-inspired design token layer and homepage styling system.
+- Updated homepage sections, CTA behavior, iconography, and dark-default visual mode to match Geodocs V1.2 direction.
+- Added governance and agent operation docs for safe, minimal-change iteration in this codebase.
+
+### Infrastructure
+
+- Added Cloudflare deployment configuration and build/deploy scripts.
+- Updated webpack filtering behavior for noisy browser extension runtime errors during local development.
+
 # [1.20.0](https://github.com/dyte-in/docs/compare/v1.19.1...v1.20.0) (2022-07-26)
 
 ### Bug Fixes
