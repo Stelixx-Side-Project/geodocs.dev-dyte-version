@@ -3,7 +3,7 @@ sidebar_position: 4
 web_core_version: 1.32.1
 ---
 
-<!-- Auto Generated Below -->
+{/* Auto Generated Below */}
 
 <a name="module_DyteParticipantMap"></a>
 

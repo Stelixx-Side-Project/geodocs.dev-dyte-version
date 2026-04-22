@@ -10,7 +10,7 @@ const meta = {
   title: 'Dyte Docs',
   tagline:
     'Explore comprehensive documentation for Dyte, including guides, references, and best practices.',
-  url: 'https://docs.dyte.io',
+  url: 'https://geodocs.dev',
   baseUrl: '/',
   favicon: '/favicon.ico',
   i18n: {
@@ -449,7 +449,7 @@ const config = {
   ...meta,
   plugins,
   future: {
-    experimental_faster: true,
+    faster: true, v4: true,
   },
 
   trailingSlash: false,

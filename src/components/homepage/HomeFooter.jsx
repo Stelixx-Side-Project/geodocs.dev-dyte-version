@@ -339,8 +339,8 @@ export default function Footer() {
             alt="Dyte"
             className="h-9 w-fit lg:h-12"
             sources={{
-              light: '/logo/dyte.svg',
-              dark: '/logo/dyte_dark_logo.svg',
+              light: '/logo/geodocs-logo-full-rectangle-transparentbg.svg',
+              dark: '/logo/geodocs_dark_logo.svg',
             }}
           />
 

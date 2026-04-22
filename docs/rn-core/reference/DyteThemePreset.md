@@ -3,51 +3,51 @@ sidebar_position: 15
 web_core_version: 1.32.1
 ---
 
-<!-- Auto Generated Below -->
+{/* Auto Generated Below */}
 
 <a name="module_DyteThemePreset"></a>
 
 The DyteThemePreset class represents the meeting theme for the current participant
 
 - [DyteThemePreset](#module_DyteThemePreset)
-  - ~~[.setupScreen](#module_DyteThemePreset+setupScreen)~~
-  - ~~[.waitingRoom](#module_DyteThemePreset+waitingRoom)~~
-  - ~~[.controlBar](#module_DyteThemePreset+controlBar)~~
-  - ~~[.header](#module_DyteThemePreset+header)~~
-  - ~~[.pipMode](#module_DyteThemePreset+pipMode)~~
+  -  [.setupScreen](#module_DyteThemePreset+setupScreen) 
+  -  [.waitingRoom](#module_DyteThemePreset+waitingRoom) 
+  -  [.controlBar](#module_DyteThemePreset+controlBar) 
+  -  [.header](#module_DyteThemePreset+header) 
+  -  [.pipMode](#module_DyteThemePreset+pipMode) 
   - [.viewType](#module_DyteThemePreset+viewType)
   - [.maxVideoStreams](#module_DyteThemePreset+maxVideoStreams)
   - [.maxScreenShareCount](#module_DyteThemePreset+maxScreenShareCount)
-  - ~~[.plugins](#module_DyteThemePreset+plugins)~~
+  -  [.plugins](#module_DyteThemePreset+plugins) 
   - [.disabledPlugins](#module_DyteThemePreset+disabledPlugins)
 
 <a name="module_DyteThemePreset+setupScreen"></a>
 
-### ~~dyteThemePreset.setupScreen~~
+###  dyteThemePreset.setupScreen 
 
 **_Deprecated_**
 
 <a name="module_DyteThemePreset+waitingRoom"></a>
 
-### ~~dyteThemePreset.waitingRoom~~
+###  dyteThemePreset.waitingRoom 
 
 **_Deprecated_**
 
 <a name="module_DyteThemePreset+controlBar"></a>
 
-### ~~dyteThemePreset.controlBar~~
+###  dyteThemePreset.controlBar 
 
 **_Deprecated_**
 
 <a name="module_DyteThemePreset+header"></a>
 
-### ~~dyteThemePreset.header~~
+###  dyteThemePreset.header 
 
 **_Deprecated_**
 
 <a name="module_DyteThemePreset+pipMode"></a>
 
-### ~~dyteThemePreset.pipMode~~
+###  dyteThemePreset.pipMode 
 
 **_Deprecated_**
 
@@ -74,7 +74,7 @@ possible concurrent screen shares
 
 <a name="module_DyteThemePreset+plugins"></a>
 
-### ~~dyteThemePreset.plugins~~
+###  dyteThemePreset.plugins 
 
 **_Deprecated_**
 
