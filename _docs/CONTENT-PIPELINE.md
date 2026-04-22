@@ -4,6 +4,7 @@
 
 - Content authoring repo: `../geodocs.dev-docs`
 - Published docs repo: `geodocs.dev-ui`
+- Foundation messaging + IA source: `_docs/GEODOCS-FOUNDATION.md`
 
 ## Allowed synced folders
 

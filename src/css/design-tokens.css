@@ -235,6 +235,12 @@
     line-height: var(--ds-type-display-secondary-line-height);
   }
 
+  .ds-heading-serif {
+    font-family: var(--ds-font-display-serif);
+    font-weight: 400;
+    letter-spacing: normal;
+  }
+
   /* Body Typography */
   .ds-body-large {
     font-family: var(--ds-font-body-ui);
@@ -399,6 +405,10 @@
 
   .display-secondary {
     @apply ds-display-secondary;
+  }
+
+  .heading-serif {
+    @apply ds-heading-serif;
   }
 
   /* Body utilities */

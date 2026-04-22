@@ -1,0 +1,1016 @@
+
+> dyte-docs@1.20.0 build
+> docusaurus build
+
+
+ ------------------------------------------------------------------------------                                                                                                         Update available 3.7.0 → 3.10.0                                                                                                                 To upgrade Docusaurus packages with the latest version, run the                                       following command:                                            `npm i @docusaurus/core@latest @docusaurus/faster@latest                                 @docusaurus/module-type-aliases@latest                                        @docusaurus/plugin-client-redirects@latest                                          @docusaurus/preset-classic@latest                                           @docusaurus/remark-plugin-npm2yarn@latest                        @docusaurus/theme-live-codeblock@latest @docusaurus/theme-mermaid@latest                              @docusaurus/tsconfig@latest`                                                                                                           ------------------------------------------------------------------------------ 
+
+[INFO] [en] Creating an optimized production build...
+[WARNING] Cannot infer the update date for some files, as they are not tracked by git.
+Browserslist: browsers data (caniuse-lite) is 16 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[webpackbar] ℹ Compiling Client
+[webpackbar] ℹ Compiling Server
+[webpackbar] ✔ Server: Compiled successfully in 36.52s
+Browserslist: browsers data (caniuse-lite) is 16 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[webpackbar] ✔ Client: Compiled successfully in 1.66m
+[WARNING] Docusaurus found broken anchors!
+
+Please check the pages of your site in the list below, and make sure you don't reference any anchor that does not exist.
+Note: it's possible to ignore broken anchors with the 'onBrokenAnchors' Docusaurus configuration, and let the build pass.
+
+Exhaustive list of all broken anchors found:
+- Broken anchor on source page path = /getting-started:
+   -> linking to /api#/operations/create_meeting
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /android-core:
+   -> linking to /api?v=v2#/operations/create_meeting
+   -> linking to /api?v=v2#/operations/add_participant
+- Broken anchor on source page path = /android:
+   -> linking to /api?v=v2#/operations/create_meeting
+   -> linking to /api?v=v2#/operations/add_participant
+- Broken anchor on source page path = /angular-ui-kit/customizations/custom-iconpack:
+   -> linking to /api#/operations/create_meeting
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /angular-ui-kit/customizations/custom-locale:
+   -> linking to /api#/operations/create_meeting
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /angular-ui-kit/quickstart:
+   -> linking to /api?v=v2#/operations/create_meeting
+   -> linking to /api?v=v2#/operations/add_participant
+- Broken anchor on source page path = /flutter-core:
+   -> linking to /api?v=v2#/operations/create_meeting
+   -> linking to /api?v=v2#/operations/add_participant
+- Broken anchor on source page path = /flutter-core/pre-call/waiting-room:
+   -> linking to /flutter-core/participants#waiting-room-methods
+- Broken anchor on source page path = /flutter/quickstart:
+   -> linking to /api?v=v2#/operations/add_participant
+- Broken anchor on source page path = /guides/capabilities/ai/meeting-summary:
+   -> linking to /api#/operations/create_meeting
+   -> linking to /api#/operations/GetMeetingSummary
+   -> linking to /api#/operations/addWebhook
+   -> linking to /api#/operations/GetSessionSummary
+   -> linking to /api#/operations/post-sessions-session_id-summary
+- Broken anchor on source page path = /guides/capabilities/ai/meeting-transcription:
+   -> linking to /api#/operations/post-presets
+   -> linking to /api#/operations/create_meeting
+   -> linking to /api#/operations/GetSessionTranscript
+   -> linking to /api#/operations/addWebhook
+   -> linking to /api#/operations/add_participant#response-body
+   -> linking to /api#/operations/add_participant#request-body
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /guides/capabilities/audio/transcriptions:
+   -> linking to /api#/operations/post-presets
+   -> linking to /api#/operations/GetSessionTranscript
+   -> linking to /api#/operations/addWebhook
+   -> linking to /api#/operations/add_participant#response-body
+   -> linking to /api#/operations/add_participant#request-body
+   -> linking to /api#/operations/create_meeting
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /guides/capabilities/breakoutroom/create-breakout-rooms:
+   -> linking to /api#/operations/create_meeting
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /guides/capabilities/breakoutroom/integrating-breakout-rooms:
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /guides/capabilities/breakoutroom/introduction-breakout-rooms:
+   -> linking to /guides/capabilities/breakoutroom/create-breakout-rooms#hosts
+- Broken anchor on source page path = /guides/capabilities/chat/export-chat-dump:
+   -> linking to /api?v=v2#/operations/GetSessionChat
+- Broken anchor on source page path = /guides/capabilities/misc/embed:
+   -> linking to /api?v=v2#/operations/create_meeting
+   -> linking to /api?v=v2#/operations/add_participant
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /guides/capabilities/misc/livestreaming-other-platforms:
+   -> linking to /api?v=v2#/operations/create_meeting
+   -> linking to /guides/livestream/build-livestream-app#step-5-add-participants
+   -> linking to /api#/operations/start_recording
+- Broken anchor on source page path = /guides/capabilities/polls/getting_started:
+   -> linking to /api#/operations/CreatePoll
+- Broken anchor on source page path = /guides/capabilities/recording/add-watermark:
+   -> linking to /api#/operations/start_recording
+- Broken anchor on source page path = /guides/capabilities/recording/configure-audio-codec:
+   -> linking to /api#/operations/start_recording
+   -> linking to /api?v=v2#/operations/start_recording
+   -> linking to /api?v=v2#/operations/get_one_recording
+- Broken anchor on source page path = /guides/capabilities/recording/configure-codecs:
+   -> linking to /api?v=v2#/operations/start_recording
+- Broken anchor on source page path = /guides/capabilities/recording/configure-dyte-bucket-config:
+   -> linking to /api?v=v2#/operations/start_recording
+- Broken anchor on source page path = /guides/capabilities/recording/create-record-app-using-sdks:
+   -> linking to /api#/operations/start_recording
+- Broken anchor on source page path = /guides/capabilities/recording/custom-cloud-storage:
+   -> linking to /api?v=v2#/operations/start_recording
+   -> linking to /api#/operations/start_recording
+- Broken anchor on source page path = /guides/capabilities/recording/interactive-recording:
+   -> linking to /api#/operations/start_recording
+   -> linking to /web-core/reference/DyteClient#module_DyteClient+participants
+- Broken anchor on source page path = /guides/capabilities/recording/manage-recording-config-hierarchy:
+   -> linking to /api#/operations/start_recording
+   -> linking to /api#/operations/create_meeting
+- Broken anchor on source page path = /guides/capabilities/recording/monitor-status:
+   -> linking to /api?v=v2#/operations/get_all_recordings
+   -> linking to /api?v=v2#/operations/get_active_recording
+   -> linking to /api?v=v2#/operations/get_one_recording
+- Broken anchor on source page path = /guides/capabilities/recording/recording-overview:
+   -> linking to /api?v=v2#/operations/get_one_recording
+   -> linking to /api?v=v2#/operations/get_active_recording
+   -> linking to /api?v=v2#/operations/start_recording
+   -> linking to /api?v=v2#/operations/stop_recording
+- Broken anchor on source page path = /guides/capabilities/recording/start-recording:
+   -> linking to /api?v=v2#/operations/create_meeting
+   -> linking to /api?v=v2#/operations/start_recording
+   -> linking to /api#/operations/start_recording
+   -> linking to /api?v=v2#/operations/get_all_meetings
+- Broken anchor on source page path = /guides/capabilities/recording/stop-recording:
+   -> linking to /api?v=v2#/operations/pause_resume_stop_recording
+- Broken anchor on source page path = /guides/capabilities/webhooks/webhook-events:
+   -> linking to /api?v=v1#/operations/create_meeting
+- Broken anchor on source page path = /guides/capabilities/webhooks/webhooks-and-events:
+   -> linking to /api?v=v2#/operations/addWebhook
+- Broken anchor on source page path = /guides/live-video/build-live-video-app:
+   -> linking to /api#/operations/create_meeting
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /guides/live-video/client-setup/android:
+   -> linking to /guides/live-video/build-live-video-app#step-2-add-participants
+   -> linking to /api?v=v2#/operations/add_participant
+- Broken anchor on source page path = /guides/live-video/client-setup/angular:
+   -> linking to /guides/live-video/build-live-video-app#step-2-add-participants
+- Broken anchor on source page path = /guides/live-video/client-setup/flutter:
+   -> linking to /guides/live-video/build-live-video-app#step-2-add-participants
+   -> linking to /api?v=v2#/operations/add_participant
+- Broken anchor on source page path = /guides/live-video/client-setup/ios:
+   -> linking to /guides/live-video/build-live-video-app#step-2-add-participants
+   -> linking to /api?v=v2#/operations/add_participant
+- Broken anchor on source page path = /guides/live-video/client-setup/javascript:
+   -> linking to /guides/live-video/build-live-video-app#step-2-add-participants
+- Broken anchor on source page path = /guides/live-video/client-setup/react:
+   -> linking to /guides/live-video/build-live-video-app#step-2-add-participants
+- Broken anchor on source page path = /guides/live-video/concepts:
+   -> linking to /api#/operations/createOrg
+   -> linking to /api#/operations/create_meeting
+   -> linking to /api#/operations/get_all_meetings
+   -> linking to /api#/operations/GetSessions
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /guides/livestream/build-livestream-app:
+   -> linking to /api#/operations/create_meeting
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /guides/livestream/client-setup/android:
+   -> linking to /guides/live-video/build-live-video-app#step-2-add-participants
+   -> linking to /api?v=v2#/operations/add_participant
+- Broken anchor on source page path = /guides/livestream/client-setup/angular:
+   -> linking to /guides/live-video/build-live-video-app#step-2-add-participants
+- Broken anchor on source page path = /guides/livestream/client-setup/flutter:
+   -> linking to /guides/live-video/build-live-video-app#step-2-add-participants
+   -> linking to /api?v=v2#/operations/add_participant
+- Broken anchor on source page path = /guides/livestream/client-setup/ios:
+   -> linking to /guides/live-video/build-live-video-app#step-2-add-participants
+   -> linking to /api?v=v2#/operations/add_participant
+- Broken anchor on source page path = /guides/livestream/client-setup/javascript:
+   -> linking to /guides/live-video/build-live-video-app#step-2-add-participants
+- Broken anchor on source page path = /guides/livestream/client-setup/react:
+   -> linking to /guides/live-video/build-live-video-app#step-2-add-participants
+- Broken anchor on source page path = /guides/migration/opentok/concepts-opentok-vs-dyte:
+   -> linking to /api#/operations/create_meeting
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /guides/migration/opentok/opentok-shim-by-dyte:
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /guides/migration/twilio/basics:
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /guides/migration/twilio/twilio-shim-by-dyte:
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /guides/rest-apis/livestream-dyte-meeting:
+   -> linking to /api?v=v2#/operations/create_meeting
+   -> linking to /api#/operations/add_participant
+   -> linking to /guides/livestream/build-livestream-app#step-5-add-participants
+   -> linking to /api?v=v2#/operations/get_all_meetings
+   -> linking to /api#/paths/meetings-meeting_id--livestreams/post
+   -> linking to /api#/paths/meetings-meeting_id--livestreams/get
+   -> linking to /api#/operations/fetch_all_livestreams
+- Broken anchor on source page path = /guides/rest-apis/quickstart:
+   -> linking to /api#/operations/add_participant
+   -> linking to /api#/operations/addWebhook
+- Broken anchor on source page path = /guides/v2-migration-guide:
+   -> linking to /api#/operations/GetSessionChat
+   -> linking to /api#/operations/GetSessions
+   -> linking to /api#/operations/GetActiveSession
+   -> linking to /api#/paths/livestreams/post
+   -> linking to /api#/operations/GetOverallStats
+   -> linking to /api#/operations/createOrg
+   -> linking to /api#/operations/getOrg
+   -> linking to /api#/operations/editOrg
+   -> linking to /api#/operations/regenerate_token
+   -> linking to /api#/operations/delete-presets-preset_id
+- Broken anchor on source page path = /guides/voice-conf/build-voice-app:
+   -> linking to /api#/operations/create_meeting
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /guides/voice-conf/client-setup/android:
+   -> linking to /guides/live-video/build-live-video-app#step-2-add-participants
+   -> linking to /api?v=v2#/operations/add_participant
+- Broken anchor on source page path = /guides/voice-conf/client-setup/angular:
+   -> linking to /guides/live-video/build-live-video-app#step-2-add-participants
+- Broken anchor on source page path = /guides/voice-conf/client-setup/flutter:
+   -> linking to /guides/live-video/build-live-video-app#step-2-add-participants
+   -> linking to /api?v=v2#/operations/add_participant
+- Broken anchor on source page path = /guides/voice-conf/client-setup/ios:
+   -> linking to /guides/live-video/build-live-video-app#step-2-add-participants
+   -> linking to /api?v=v2#/operations/add_participant
+- Broken anchor on source page path = /guides/voice-conf/client-setup/javascript:
+   -> linking to /guides/live-video/build-live-video-app#step-2-add-participants
+- Broken anchor on source page path = /guides/voice-conf/client-setup/react:
+   -> linking to /guides/live-video/build-live-video-app#step-2-add-participants
+- Broken anchor on source page path = /guides/voice-conf/concepts:
+   -> linking to /api#/operations/createOrg
+   -> linking to /api#/operations/create_meeting
+   -> linking to /api#/operations/get_all_meetings
+   -> linking to /api#/operations/GetSessions
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /ios-core:
+   -> linking to /api?v=v2#/operations/create_meeting
+   -> linking to /api?v=v2#/operations/add_participant
+   -> linking to /api#/operations/addParticipant
+- Broken anchor on source page path = /ios/quickstart:
+   -> linking to /api?v=v2#/operations/create_meeting
+   -> linking to /api?v=v2#/operations/add_participant
+- Broken anchor on source page path = /react-native/customizations/custom-iconpack:
+   -> linking to /api#/operations/create_meeting
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /react-native/customizations/custom-locale:
+   -> linking to /api#/operations/create_meeting
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /react-native/quickstart:
+   -> linking to /api?v=v2#/operations/create_meeting
+   -> linking to /api?v=v2#/operations/add_participant
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /react-ui-kit/customizations/custom-iconpack:
+   -> linking to /api#/operations/create_meeting
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /react-ui-kit/customizations/custom-locale:
+   -> linking to /api#/operations/create_meeting
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /react-ui-kit/quickstart:
+   -> linking to /api?v=v2#/operations/create_meeting
+   -> linking to /api?v=v2#/operations/add_participant
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /react-web-core:
+   -> linking to /api?v=v2#/operations/create_meeting
+   -> linking to /api?v=v2#/operations/add_participant
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /react-web-core/reference/DyteAi:
+   -> linking to #module_DyteAi (resolved as: /react-web-core/reference/DyteAi#module_DyteAi)
+   -> linking to #module_DyteAi.parseTranscript (resolved as: /react-web-core/reference/DyteAi#module_DyteAi.parseTranscript)
+   -> linking to #module_DyteAi.parseTranscripts (resolved as: /react-web-core/reference/DyteAi#module_DyteAi.parseTranscripts)
+- Broken anchor on source page path = /react-web-core/reference/DyteChat:
+   -> linking to #module_DyteChat (resolved as: /react-web-core/reference/DyteChat#module_DyteChat)
+   -> linking to #module_DyteChat+messages (resolved as: /react-web-core/reference/DyteChat#module_DyteChat+messages)
+   -> linking to #module_DyteChat+channels (resolved as: /react-web-core/reference/DyteChat#module_DyteChat+channels)
+   -> linking to #module_DyteChat+roomJoined (resolved as: /react-web-core/reference/DyteChat#module_DyteChat+roomJoined)
+   -> linking to #module_DyteChat+pinned (resolved as: /react-web-core/reference/DyteChat#module_DyteChat+pinned)
+   -> linking to #module_DyteChat+sendTextMessage (resolved as: /react-web-core/reference/DyteChat#module_DyteChat+sendTextMessage)
+   -> linking to #module_DyteChat+sendImageMessage (resolved as: /react-web-core/reference/DyteChat#module_DyteChat+sendImageMessage)
+   -> linking to #module_DyteChat+sendFileMessage (resolved as: /react-web-core/reference/DyteChat#module_DyteChat+sendFileMessage)
+   -> linking to #module_DyteChat+sendMessage (resolved as: /react-web-core/reference/DyteChat#module_DyteChat+sendMessage)
+   -> linking to #module_DyteChat+getMessagesByUser (resolved as: /react-web-core/reference/DyteChat#module_DyteChat+getMessagesByUser)
+   -> linking to #module_DyteChat+getMessagesByType (resolved as: /react-web-core/reference/DyteChat#module_DyteChat+getMessagesByType)
+   -> linking to #module_DyteChat+pin (resolved as: /react-web-core/reference/DyteChat#module_DyteChat+pin)
+   -> linking to #module_DyteChat+unpin (resolved as: /react-web-core/reference/DyteChat#module_DyteChat+unpin)
+   -> linking to #module_DyteChat+getMessages (resolved as: /react-web-core/reference/DyteChat#module_DyteChat+getMessages)
+   -> linking to #module_DyteChat+createChannel (resolved as: /react-web-core/reference/DyteChat#module_DyteChat+createChannel)
+   -> linking to #module_DyteChat+updateChannel (resolved as: /react-web-core/reference/DyteChat#module_DyteChat+updateChannel)
+   -> linking to #module_DyteChat+sendMessageToChannel (resolved as: /react-web-core/reference/DyteChat#module_DyteChat+sendMessageToChannel)
+   -> linking to #module_DyteChat+getChannelMembers (resolved as: /react-web-core/reference/DyteChat#module_DyteChat+getChannelMembers)
+   -> linking to #module_DyteChat+searchMessages (resolved as: /react-web-core/reference/DyteChat#module_DyteChat+searchMessages)
+   -> linking to #module_DyteChat+markLastReadMessage (resolved as: /react-web-core/reference/DyteChat#module_DyteChat+markLastReadMessage)
+- Broken anchor on source page path = /react-web-core/reference/DyteClient:
+   -> linking to #module_DyteClient (resolved as: /react-web-core/reference/DyteClient#module_DyteClient)
+   -> linking to #module_DyteClient+participants (resolved as: /react-web-core/reference/DyteClient#module_DyteClient+participants)
+   -> linking to #module_DyteClient+self (resolved as: /react-web-core/reference/DyteClient#module_DyteClient+self)
+   -> linking to #module_DyteClient+meta (resolved as: /react-web-core/reference/DyteClient#module_DyteClient+meta)
+   -> linking to #module_DyteClient+ai (resolved as: /react-web-core/reference/DyteClient#module_DyteClient+ai)
+   -> linking to #module_DyteClient+plugins (resolved as: /react-web-core/reference/DyteClient#module_DyteClient+plugins)
+   -> linking to #module_DyteClient+chat (resolved as: /react-web-core/reference/DyteClient#module_DyteClient+chat)
+   -> linking to #module_DyteClient+polls (resolved as: /react-web-core/reference/DyteClient#module_DyteClient+polls)
+   -> linking to #module_DyteClient+remote (resolved as: /react-web-core/reference/DyteClient#module_DyteClient+remote)
+   -> linking to #module_DyteClient+connectedMeetings (resolved as: /react-web-core/reference/DyteClient#module_DyteClient+connectedMeetings)
+   -> linking to #module_DyteClient+join (resolved as: /react-web-core/reference/DyteClient#module_DyteClient+join)
+   -> linking to #module_DyteClient+leave (resolved as: /react-web-core/reference/DyteClient#module_DyteClient+leave)
+- Broken anchor on source page path = /react-web-core/reference/DyteConnectedMeetings:
+   -> linking to #module_DyteConnectedMeetings (resolved as: /react-web-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings)
+   -> linking to #module_DyteConnectedMeetings+getConnectedMeetings (resolved as: /react-web-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings+getConnectedMeetings)
+   -> linking to #module_DyteConnectedMeetings+createMeetings (resolved as: /react-web-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings+createMeetings)
+   -> linking to #module_DyteConnectedMeetings+updateMeetings (resolved as: /react-web-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings+updateMeetings)
+   -> linking to #module_DyteConnectedMeetings+deleteMeetings (resolved as: /react-web-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings+deleteMeetings)
+   -> linking to #module_DyteConnectedMeetings+moveParticipants (resolved as: /react-web-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings+moveParticipants)
+   -> linking to #module_DyteConnectedMeetings+moveParticipantsWithCustomPreset (resolved as: /react-web-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings+moveParticipantsWithCustomPreset)
+- Broken anchor on source page path = /react-web-core/reference/DyteLivestream:
+   -> linking to #module_DyteLivestream (resolved as: /react-web-core/reference/DyteLivestream#module_DyteLivestream)
+   -> linking to #module_DyteLivestream+start (resolved as: /react-web-core/reference/DyteLivestream#module_DyteLivestream+start)
+   -> linking to #module_DyteLivestream+stop (resolved as: /react-web-core/reference/DyteLivestream#module_DyteLivestream+stop)
+- Broken anchor on source page path = /react-web-core/reference/DyteMeta:
+   -> linking to #module_DyteMeta (resolved as: /react-web-core/reference/DyteMeta#module_DyteMeta)
+   -> linking to #module_DyteMeta+selfActiveTab (resolved as: /react-web-core/reference/DyteMeta#module_DyteMeta+selfActiveTab)
+   -> linking to #module_DyteMeta+broadcastTabChanges (resolved as: /react-web-core/reference/DyteMeta#module_DyteMeta+broadcastTabChanges)
+   -> linking to #module_DyteMeta+viewType (resolved as: /react-web-core/reference/DyteMeta#module_DyteMeta+viewType)
+   -> linking to #module_DyteMeta+meetingStartedTimestamp (resolved as: /react-web-core/reference/DyteMeta#module_DyteMeta+meetingStartedTimestamp)
+   -> linking to #module_DyteMeta+meetingTitle (resolved as: /react-web-core/reference/DyteMeta#module_DyteMeta+meetingTitle)
+   -> linking to #module_DyteMeta+sessionId (resolved as: /react-web-core/reference/DyteMeta#module_DyteMeta+sessionId)
+   -> linking to #module_DyteMeta+meetingId (resolved as: /react-web-core/reference/DyteMeta#module_DyteMeta+meetingId)
+   -> linking to #module_DyteMeta+mediaConnected (resolved as: /react-web-core/reference/DyteMeta#module_DyteMeta+mediaConnected)
+   -> linking to #module_DyteMeta+socketConnected (resolved as: /react-web-core/reference/DyteMeta#module_DyteMeta+socketConnected)
+   -> linking to #module_DyteMeta+setBroadcastTabChanges (resolved as: /react-web-core/reference/DyteMeta#module_DyteMeta+setBroadcastTabChanges)
+   -> linking to #module_DyteMeta+setSelfActiveTab (resolved as: /react-web-core/reference/DyteMeta#module_DyteMeta+setSelfActiveTab)
+- Broken anchor on source page path = /react-web-core/reference/DyteParticipant:
+   -> linking to #module_DyteParticipant (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant)
+   -> linking to #module_DyteParticipant--this.+id (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+id)
+   -> linking to #module_DyteParticipant--this.+userId (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+userId)
+   -> linking to #module_DyteParticipant--this.+name (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+name)
+   -> linking to #module_DyteParticipant--this.+picture (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+picture)
+   -> linking to #module_DyteParticipant--this.+customParticipantId (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+customParticipantId)
+   -> linking to #module_DyteParticipant--this.+device (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+device)
+   -> linking to #module_DyteParticipant--this.+videoTrack (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+videoTrack)
+   -> linking to #module_DyteParticipant--this.+audioTrack (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+audioTrack)
+   -> linking to #module_DyteParticipant--this.+screenShareTracks (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+screenShareTracks)
+   -> linking to #module_DyteParticipant--this.+videoEnabled (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+videoEnabled)
+   -> linking to #module_DyteParticipant--this.+audioEnabled (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+audioEnabled)
+   -> linking to #module_DyteParticipant--this.+screenShareEnabled (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+screenShareEnabled)
+   -> linking to #module_DyteParticipant--this.+producers (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+producers)
+   -> linking to #module_DyteParticipant--this.+supportsRemoteControl (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+supportsRemoteControl)
+   -> linking to #module_DyteParticipant--this.+presetName (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+presetName)
+   -> linking to #module_DyteParticipant--this.+stageStatus (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+stageStatus)
+   -> linking to #module_DyteParticipant--this.+roomJoined (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+roomJoined)
+   -> linking to #module_DyteParticipant--this.+isPinned (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+isPinned)
+   -> linking to #module_DyteParticipant--this.+pin (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+pin)
+   -> linking to #module_DyteParticipant--this.+unpin (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+unpin)
+   -> linking to #module_DyteParticipant--this.+setIsPinned (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+setIsPinned)
+   -> linking to #module_DyteParticipant--this.+disableAudio (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+disableAudio)
+   -> linking to #module_DyteParticipant--this.+kick (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+kick)
+   -> linking to #module_DyteParticipant--this.+disableVideo (resolved as: /react-web-core/reference/DyteParticipant#module_DyteParticipant--this.+disableVideo)
+- Broken anchor on source page path = /react-web-core/reference/DyteParticipants:
+   -> linking to #module_DyteParticipants (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants)
+   -> linking to #module_DyteParticipants--module.exports+waitlisted (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+waitlisted)
+   -> linking to #module_DyteParticipants--module.exports+joined (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+joined)
+   -> linking to #module_DyteParticipants--module.exports+active (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+active)
+   -> linking to #module_DyteParticipants--module.exports+pinned (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+pinned)
+   -> linking to #module_DyteParticipants--module.exports+all (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+all)
+   -> linking to #module_DyteParticipants--module.exports+pip (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+pip)
+   -> linking to #module_DyteParticipants--module.exports+roomJoined (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+roomJoined)
+   -> linking to #module_DyteParticipants--module.exports+viewMode (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+viewMode)
+   -> linking to #module_DyteParticipants--module.exports+currentPage (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+currentPage)
+   -> linking to #module_DyteParticipants--module.exports+lastActiveSpeaker (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+lastActiveSpeaker)
+   -> linking to #module_DyteParticipants--module.exports+selectedPeers (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+selectedPeers)
+   -> linking to #module_DyteParticipants--module.exports+count (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+count)
+   -> linking to #module_DyteParticipants--module.exports+maxActiveParticipantsCount (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+maxActiveParticipantsCount)
+   -> linking to #module_DyteParticipants--module.exports+pageCount (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+pageCount)
+   -> linking to #module_DyteParticipants--module.exports+setMaxActiveParticipantsCount (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+setMaxActiveParticipantsCount)
+   -> linking to #module_DyteParticipants--module.exports+acceptWaitingRoomRequest (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+acceptWaitingRoomRequest)
+   -> linking to #module_DyteParticipants--module.exports+acceptAllWaitingRoomRequest (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+acceptAllWaitingRoomRequest)
+   -> linking to #module_DyteParticipants--module.exports+rejectWaitingRoomRequest (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+rejectWaitingRoomRequest)
+   -> linking to #module_DyteParticipants--module.exports+setViewMode (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+setViewMode)
+   -> linking to #module_DyteParticipants--module.exports+setPage (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+setPage)
+   -> linking to #module_DyteParticipants--module.exports+disableAllAudio (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+disableAllAudio)
+   -> linking to #module_DyteParticipants--module.exports+disableAllVideo (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+disableAllVideo)
+   -> linking to #module_DyteParticipants--module.exports+kickAll (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+kickAll)
+   -> linking to #module_DyteParticipants--module.exports+broadcastMessage (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+broadcastMessage)
+   -> linking to #module_DyteParticipants--module.exports+getAllJoinedPeers (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+getAllJoinedPeers)
+   -> linking to #module_DyteParticipants--module.exports+getParticipantsInMeetingPreJoin (resolved as: /react-web-core/reference/DyteParticipants#module_DyteParticipants--module.exports+getParticipantsInMeetingPreJoin)
+- Broken anchor on source page path = /react-web-core/reference/DytePermissionsPreset:
+   -> linking to #module_DytePermissionsPreset (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset)
+   -> linking to #module_DytePermissionsPreset+stageEnabled (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+stageEnabled)
+   -> linking to #module_DytePermissionsPreset+stageAccess (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+stageAccess)
+   -> linking to #module_DytePermissionsPreset+acceptWaitingRequests (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+acceptWaitingRequests)
+   -> linking to #module_DytePermissionsPreset+requestProduceVideo (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+requestProduceVideo)
+   -> linking to #module_DytePermissionsPreset+requestProduceAudio (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+requestProduceAudio)
+   -> linking to #module_DytePermissionsPreset+requestProduceScreenshare (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+requestProduceScreenshare)
+   -> linking to #module_DytePermissionsPreset+canAllowParticipantAudio (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canAllowParticipantAudio)
+   -> linking to #module_DytePermissionsPreset+canAllowParticipantScreensharing (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canAllowParticipantScreensharing)
+   -> linking to #module_DytePermissionsPreset+canAllowParticipantVideo (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canAllowParticipantVideo)
+   -> linking to #module_DytePermissionsPreset+canDisableParticipantAudio (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canDisableParticipantAudio)
+   -> linking to #module_DytePermissionsPreset+canDisableParticipantVideo (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canDisableParticipantVideo)
+   -> linking to #module_DytePermissionsPreset+kickParticipant (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+kickParticipant)
+   -> linking to #module_DytePermissionsPreset+pinParticipant (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+pinParticipant)
+   -> linking to #module_DytePermissionsPreset+canRecord (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canRecord)
+   -> linking to #module_DytePermissionsPreset+waitingRoomBehaviour (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+waitingRoomBehaviour)
+   -> linking to #module_DytePermissionsPreset+plugins (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+plugins)
+   -> linking to #module_DytePermissionsPreset+polls (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+polls)
+   -> linking to #module_DytePermissionsPreset+canProduceVideo (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canProduceVideo)
+   -> linking to #module_DytePermissionsPreset+canProduceScreenshare (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canProduceScreenshare)
+   -> linking to #module_DytePermissionsPreset+canProduceAudio (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canProduceAudio)
+   -> linking to #module_DytePermissionsPreset+chatPublic (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+chatPublic)
+   -> linking to #module_DytePermissionsPreset+chatPrivate (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+chatPrivate)
+   -> linking to #module_DytePermissionsPreset+hiddenParticipant (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+hiddenParticipant)
+   -> linking to #module_DytePermissionsPreset+showParticipantList (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+showParticipantList)
+   -> linking to #module_DytePermissionsPreset+canChangeParticipantPermissions (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canChangeParticipantPermissions)
+   -> linking to #module_DytePermissionsPreset+canLivestream (resolved as: /react-web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canLivestream)
+- Broken anchor on source page path = /react-web-core/reference/DytePlugin:
+   -> linking to #module_DytePlugin (resolved as: /react-web-core/reference/DytePlugin#module_DytePlugin)
+   -> linking to #module_DytePlugin+roomJoined (resolved as: /react-web-core/reference/DytePlugin#module_DytePlugin+roomJoined)
+   -> linking to #module_DytePlugin+sendIframeEvent (resolved as: /react-web-core/reference/DytePlugin#module_DytePlugin+sendIframeEvent)
+   -> linking to #module_DytePlugin+sendData (resolved as: /react-web-core/reference/DytePlugin#module_DytePlugin+sendData)
+   -> linking to #module_DytePlugin+removePluginView (resolved as: /react-web-core/reference/DytePlugin#module_DytePlugin+removePluginView)
+   -> linking to #module_DytePlugin+addPluginView (resolved as: /react-web-core/reference/DytePlugin#module_DytePlugin+addPluginView)
+   -> linking to #module_DytePlugin+activateForSelf (resolved as: /react-web-core/reference/DytePlugin#module_DytePlugin+activateForSelf)
+   -> linking to #module_DytePlugin+deactivateForSelf (resolved as: /react-web-core/reference/DytePlugin#module_DytePlugin+deactivateForSelf)
+   -> linking to #module_DytePlugin+enable (resolved as: /react-web-core/reference/DytePlugin#module_DytePlugin+enable)
+   -> linking to #module_DytePlugin+disable (resolved as: /react-web-core/reference/DytePlugin#module_DytePlugin+disable)
+   -> linking to #module_DytePlugin+activate (resolved as: /react-web-core/reference/DytePlugin#module_DytePlugin+activate)
+   -> linking to #module_DytePlugin+deactivate (resolved as: /react-web-core/reference/DytePlugin#module_DytePlugin+deactivate)
+- Broken anchor on source page path = /react-web-core/reference/DytePlugins:
+   -> linking to #module_DytePlugins (resolved as: /react-web-core/reference/DytePlugins#module_DytePlugins)
+   -> linking to #module_DytePlugins+all (resolved as: /react-web-core/reference/DytePlugins#module_DytePlugins+all)
+   -> linking to #module_DytePlugins+active (resolved as: /react-web-core/reference/DytePlugins#module_DytePlugins+active)
+- Broken anchor on source page path = /react-web-core/reference/DytePolls:
+   -> linking to #module_DytePolls (resolved as: /react-web-core/reference/DytePolls#module_DytePolls)
+   -> linking to #module_DytePolls+items (resolved as: /react-web-core/reference/DytePolls#module_DytePolls+items)
+   -> linking to #module_DytePolls+roomJoined (resolved as: /react-web-core/reference/DytePolls#module_DytePolls+roomJoined)
+   -> linking to #module_DytePolls+create (resolved as: /react-web-core/reference/DytePolls#module_DytePolls+create)
+   -> linking to #module_DytePolls+vote (resolved as: /react-web-core/reference/DytePolls#module_DytePolls+vote)
+- Broken anchor on source page path = /react-web-core/reference/DyteRecording:
+   -> linking to #module_DyteRecording (resolved as: /react-web-core/reference/DyteRecording#module_DyteRecording)
+   -> linking to #module_DyteRecording+start (resolved as: /react-web-core/reference/DyteRecording#module_DyteRecording+start)
+   -> linking to #module_DyteRecording+stop (resolved as: /react-web-core/reference/DyteRecording#module_DyteRecording+stop)
+   -> linking to #module_DyteRecording+pause (resolved as: /react-web-core/reference/DyteRecording#module_DyteRecording+pause)
+   -> linking to #module_DyteRecording+resume (resolved as: /react-web-core/reference/DyteRecording#module_DyteRecording+resume)
+- Broken anchor on source page path = /react-web-core/reference/DyteRemote:
+   -> linking to #module_DyteRemote (resolved as: /react-web-core/reference/DyteRemote#module_DyteRemote)
+   -> linking to #module_DyteRemote+requestControl (resolved as: /react-web-core/reference/DyteRemote#module_DyteRemote+requestControl)
+   -> linking to #module_DyteRemote+acceptControl (resolved as: /react-web-core/reference/DyteRemote#module_DyteRemote+acceptControl)
+   -> linking to #module_DyteRemote+endControl (resolved as: /react-web-core/reference/DyteRemote#module_DyteRemote+endControl)
+- Broken anchor on source page path = /react-web-core/reference/DyteSelf:
+   -> linking to #module_DyteSelf (resolved as: /react-web-core/reference/DyteSelf#module_DyteSelf)
+   -> linking to #module_DyteSelf+roomState (resolved as: /react-web-core/reference/DyteSelf#module_DyteSelf+roomState)
+   -> linking to #module_DyteSelf+permissions (resolved as: /react-web-core/reference/DyteSelf#module_DyteSelf+permissions)
+   -> linking to #module_DyteSelf+config (resolved as: /react-web-core/reference/DyteSelf#module_DyteSelf+config)
+   -> linking to #module_DyteSelf+roomJoined (resolved as: /react-web-core/reference/DyteSelf#module_DyteSelf+roomJoined)
+   -> linking to #module_DyteSelf+isPinned (resolved as: /react-web-core/reference/DyteSelf#module_DyteSelf+isPinned)
+   -> linking to #module_DyteSelf+setName (resolved as: /react-web-core/reference/DyteSelf#module_DyteSelf+setName)
+   -> linking to #module_DyteSelf+setupTracks (resolved as: /react-web-core/reference/DyteSelf#module_DyteSelf+setupTracks)
+   -> linking to #module_DyteSelf+enableAudio (resolved as: /react-web-core/reference/DyteSelf#module_DyteSelf+enableAudio)
+   -> linking to #module_DyteSelf+enableVideo (resolved as: /react-web-core/reference/DyteSelf#module_DyteSelf+enableVideo)
+   -> linking to #module_DyteSelf+updateVideoConstraints (resolved as: /react-web-core/reference/DyteSelf#module_DyteSelf+updateVideoConstraints)
+   -> linking to #module_DyteSelf+enableScreenShare (resolved as: /react-web-core/reference/DyteSelf#module_DyteSelf+enableScreenShare)
+   -> linking to #module_DyteSelf+updateScreenshareConstraints (resolved as: /react-web-core/reference/DyteSelf#module_DyteSelf+updateScreenshareConstraints)
+   -> linking to #module_DyteSelf+disableAudio (resolved as: /react-web-core/reference/DyteSelf#module_DyteSelf+disableAudio)
+   -> linking to #module_DyteSelf+disableVideo (resolved as: /react-web-core/reference/DyteSelf#module_DyteSelf+disableVideo)
+   -> linking to #module_DyteSelf+disableScreenShare (resolved as: /react-web-core/reference/DyteSelf#module_DyteSelf+disableScreenShare)
+   -> linking to #module_DyteSelf+getAllDevices (resolved as: /react-web-core/reference/DyteSelf#module_DyteSelf+getAllDevices)
+   -> linking to #module_DyteSelf+setIsPinned (resolved as: /react-web-core/reference/DyteSelf#module_DyteSelf+setIsPinned)
+   -> linking to #module_DyteSelf+pin (resolved as: /react-web-core/reference/DyteSelf#module_DyteSelf+pin)
+   -> linking to #module_DyteSelf+unpin (resolved as: /react-web-core/reference/DyteSelf#module_DyteSelf+unpin)
+- Broken anchor on source page path = /react-web-core/reference/DyteSelfMedia:
+   -> linking to #module_DyteSelfMedia (resolved as: /react-web-core/reference/DyteSelfMedia#module_DyteSelfMedia)
+   -> linking to #module_DyteSelfMedia+audioTrack (resolved as: /react-web-core/reference/DyteSelfMedia#module_DyteSelfMedia+audioTrack)
+   -> linking to #module_DyteSelfMedia+rawAudioTrack (resolved as: /react-web-core/reference/DyteSelfMedia#module_DyteSelfMedia+rawAudioTrack)
+   -> linking to #module_DyteSelfMedia+mediaPermissions (resolved as: /react-web-core/reference/DyteSelfMedia#module_DyteSelfMedia+mediaPermissions)
+   -> linking to #module_DyteSelfMedia+videoTrack (resolved as: /react-web-core/reference/DyteSelfMedia#module_DyteSelfMedia+videoTrack)
+   -> linking to #module_DyteSelfMedia+rawVideoTrack (resolved as: /react-web-core/reference/DyteSelfMedia#module_DyteSelfMedia+rawVideoTrack)
+   -> linking to #module_DyteSelfMedia+screenShareTracks (resolved as: /react-web-core/reference/DyteSelfMedia#module_DyteSelfMedia+screenShareTracks)
+   -> linking to #module_DyteSelfMedia+audioEnabled (resolved as: /react-web-core/reference/DyteSelfMedia#module_DyteSelfMedia+audioEnabled)
+   -> linking to #module_DyteSelfMedia+videoEnabled (resolved as: /react-web-core/reference/DyteSelfMedia#module_DyteSelfMedia+videoEnabled)
+   -> linking to #module_DyteSelfMedia+screenShareEnabled (resolved as: /react-web-core/reference/DyteSelfMedia#module_DyteSelfMedia+screenShareEnabled)
+   -> linking to #module_DyteSelfMedia+addAudioMiddleware (resolved as: /react-web-core/reference/DyteSelfMedia#module_DyteSelfMedia+addAudioMiddleware)
+   -> linking to #module_DyteSelfMedia+removeAudioMiddleware (resolved as: /react-web-core/reference/DyteSelfMedia#module_DyteSelfMedia+removeAudioMiddleware)
+   -> linking to #module_DyteSelfMedia+addVideoMiddleware (resolved as: /react-web-core/reference/DyteSelfMedia#module_DyteSelfMedia+addVideoMiddleware)
+   -> linking to #module_DyteSelfMedia+removeVideoMiddleware (resolved as: /react-web-core/reference/DyteSelfMedia#module_DyteSelfMedia+removeVideoMiddleware)
+   -> linking to #module_DyteSelfMedia+getCurrentDevices (resolved as: /react-web-core/reference/DyteSelfMedia#module_DyteSelfMedia+getCurrentDevices)
+   -> linking to #module_DyteSelfMedia+getAudioDevices (resolved as: /react-web-core/reference/DyteSelfMedia#module_DyteSelfMedia+getAudioDevices)
+   -> linking to #module_DyteSelfMedia+getVideoDevices (resolved as: /react-web-core/reference/DyteSelfMedia#module_DyteSelfMedia+getVideoDevices)
+   -> linking to #module_DyteSelfMedia+getSpeakerDevices (resolved as: /react-web-core/reference/DyteSelfMedia#module_DyteSelfMedia+getSpeakerDevices)
+   -> linking to #module_DyteSelfMedia+getDeviceById (resolved as: /react-web-core/reference/DyteSelfMedia#module_DyteSelfMedia+getDeviceById)
+   -> linking to #module_DyteSelfMedia+setDevice (resolved as: /react-web-core/reference/DyteSelfMedia#module_DyteSelfMedia+setDevice)
+- Broken anchor on source page path = /react-web-core/reference/DyteStage:
+   -> linking to #module_DyteStage (resolved as: /react-web-core/reference/DyteStage#module_DyteStage)
+   -> linking to #module_DyteStage+getAccessRequests (resolved as: /react-web-core/reference/DyteStage#module_DyteStage+getAccessRequests)
+   -> linking to #module_DyteStage+requestAccess (resolved as: /react-web-core/reference/DyteStage#module_DyteStage+requestAccess)
+   -> linking to #module_DyteStage+cancelRequestAccess (resolved as: /react-web-core/reference/DyteStage#module_DyteStage+cancelRequestAccess)
+   -> linking to #module_DyteStage+grantAccess (resolved as: /react-web-core/reference/DyteStage#module_DyteStage+grantAccess)
+   -> linking to #module_DyteStage+denyAccess (resolved as: /react-web-core/reference/DyteStage#module_DyteStage+denyAccess)
+   -> linking to #module_DyteStage+join (resolved as: /react-web-core/reference/DyteStage#module_DyteStage+join)
+   -> linking to #module_DyteStage+leave (resolved as: /react-web-core/reference/DyteStage#module_DyteStage+leave)
+   -> linking to #module_DyteStage+kick (resolved as: /react-web-core/reference/DyteStage#module_DyteStage+kick)
+- Broken anchor on source page path = /react-web-core/reference/DyteThemePreset:
+   -> linking to #module_DyteThemePreset (resolved as: /react-web-core/reference/DyteThemePreset#module_DyteThemePreset)
+   -> linking to #module_DyteThemePreset+setupScreen (resolved as: /react-web-core/reference/DyteThemePreset#module_DyteThemePreset+setupScreen)
+   -> linking to #module_DyteThemePreset+waitingRoom (resolved as: /react-web-core/reference/DyteThemePreset#module_DyteThemePreset+waitingRoom)
+   -> linking to #module_DyteThemePreset+controlBar (resolved as: /react-web-core/reference/DyteThemePreset#module_DyteThemePreset+controlBar)
+   -> linking to #module_DyteThemePreset+header (resolved as: /react-web-core/reference/DyteThemePreset#module_DyteThemePreset+header)
+   -> linking to #module_DyteThemePreset+pipMode (resolved as: /react-web-core/reference/DyteThemePreset#module_DyteThemePreset+pipMode)
+   -> linking to #module_DyteThemePreset+viewType (resolved as: /react-web-core/reference/DyteThemePreset#module_DyteThemePreset+viewType)
+   -> linking to #module_DyteThemePreset+maxVideoStreams (resolved as: /react-web-core/reference/DyteThemePreset#module_DyteThemePreset+maxVideoStreams)
+   -> linking to #module_DyteThemePreset+maxScreenShareCount (resolved as: /react-web-core/reference/DyteThemePreset#module_DyteThemePreset+maxScreenShareCount)
+   -> linking to #module_DyteThemePreset+plugins (resolved as: /react-web-core/reference/DyteThemePreset#module_DyteThemePreset+plugins)
+   -> linking to #module_DyteThemePreset+disabledPlugins (resolved as: /react-web-core/reference/DyteThemePreset#module_DyteThemePreset+disabledPlugins)
+- Broken anchor on source page path = /rn-core/reference/DyteAi:
+   -> linking to #module_DyteAi (resolved as: /rn-core/reference/DyteAi#module_DyteAi)
+   -> linking to #module_DyteAi.parseTranscript (resolved as: /rn-core/reference/DyteAi#module_DyteAi.parseTranscript)
+   -> linking to #module_DyteAi.parseTranscripts (resolved as: /rn-core/reference/DyteAi#module_DyteAi.parseTranscripts)
+- Broken anchor on source page path = /rn-core/reference/DyteChat:
+   -> linking to #module_DyteChat (resolved as: /rn-core/reference/DyteChat#module_DyteChat)
+   -> linking to #module_DyteChat+messages (resolved as: /rn-core/reference/DyteChat#module_DyteChat+messages)
+   -> linking to #module_DyteChat+channels (resolved as: /rn-core/reference/DyteChat#module_DyteChat+channels)
+   -> linking to #module_DyteChat+roomJoined (resolved as: /rn-core/reference/DyteChat#module_DyteChat+roomJoined)
+   -> linking to #module_DyteChat+pinned (resolved as: /rn-core/reference/DyteChat#module_DyteChat+pinned)
+   -> linking to #module_DyteChat+sendTextMessage (resolved as: /rn-core/reference/DyteChat#module_DyteChat+sendTextMessage)
+   -> linking to #module_DyteChat+sendImageMessage (resolved as: /rn-core/reference/DyteChat#module_DyteChat+sendImageMessage)
+   -> linking to #module_DyteChat+sendFileMessage (resolved as: /rn-core/reference/DyteChat#module_DyteChat+sendFileMessage)
+   -> linking to #module_DyteChat+sendMessage (resolved as: /rn-core/reference/DyteChat#module_DyteChat+sendMessage)
+   -> linking to #module_DyteChat+getMessagesByUser (resolved as: /rn-core/reference/DyteChat#module_DyteChat+getMessagesByUser)
+   -> linking to #module_DyteChat+getMessagesByType (resolved as: /rn-core/reference/DyteChat#module_DyteChat+getMessagesByType)
+   -> linking to #module_DyteChat+pin (resolved as: /rn-core/reference/DyteChat#module_DyteChat+pin)
+   -> linking to #module_DyteChat+unpin (resolved as: /rn-core/reference/DyteChat#module_DyteChat+unpin)
+   -> linking to #module_DyteChat+getMessages (resolved as: /rn-core/reference/DyteChat#module_DyteChat+getMessages)
+   -> linking to #module_DyteChat+createChannel (resolved as: /rn-core/reference/DyteChat#module_DyteChat+createChannel)
+   -> linking to #module_DyteChat+updateChannel (resolved as: /rn-core/reference/DyteChat#module_DyteChat+updateChannel)
+   -> linking to #module_DyteChat+sendMessageToChannel (resolved as: /rn-core/reference/DyteChat#module_DyteChat+sendMessageToChannel)
+   -> linking to #module_DyteChat+getChannelMembers (resolved as: /rn-core/reference/DyteChat#module_DyteChat+getChannelMembers)
+   -> linking to #module_DyteChat+searchMessages (resolved as: /rn-core/reference/DyteChat#module_DyteChat+searchMessages)
+   -> linking to #module_DyteChat+markLastReadMessage (resolved as: /rn-core/reference/DyteChat#module_DyteChat+markLastReadMessage)
+- Broken anchor on source page path = /rn-core/reference/DyteClient:
+   -> linking to #module_DyteClient (resolved as: /rn-core/reference/DyteClient#module_DyteClient)
+   -> linking to #module_DyteClient+participants (resolved as: /rn-core/reference/DyteClient#module_DyteClient+participants)
+   -> linking to #module_DyteClient+self (resolved as: /rn-core/reference/DyteClient#module_DyteClient+self)
+   -> linking to #module_DyteClient+meta (resolved as: /rn-core/reference/DyteClient#module_DyteClient+meta)
+   -> linking to #module_DyteClient+ai (resolved as: /rn-core/reference/DyteClient#module_DyteClient+ai)
+   -> linking to #module_DyteClient+plugins (resolved as: /rn-core/reference/DyteClient#module_DyteClient+plugins)
+   -> linking to #module_DyteClient+chat (resolved as: /rn-core/reference/DyteClient#module_DyteClient+chat)
+   -> linking to #module_DyteClient+polls (resolved as: /rn-core/reference/DyteClient#module_DyteClient+polls)
+   -> linking to #module_DyteClient+remote (resolved as: /rn-core/reference/DyteClient#module_DyteClient+remote)
+   -> linking to #module_DyteClient+connectedMeetings (resolved as: /rn-core/reference/DyteClient#module_DyteClient+connectedMeetings)
+   -> linking to #module_DyteClient+join (resolved as: /rn-core/reference/DyteClient#module_DyteClient+join)
+   -> linking to #module_DyteClient+leave (resolved as: /rn-core/reference/DyteClient#module_DyteClient+leave)
+- Broken anchor on source page path = /rn-core/reference/DyteConnectedMeetings:
+   -> linking to #module_DyteConnectedMeetings (resolved as: /rn-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings)
+   -> linking to #module_DyteConnectedMeetings+getConnectedMeetings (resolved as: /rn-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings+getConnectedMeetings)
+   -> linking to #module_DyteConnectedMeetings+createMeetings (resolved as: /rn-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings+createMeetings)
+   -> linking to #module_DyteConnectedMeetings+updateMeetings (resolved as: /rn-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings+updateMeetings)
+   -> linking to #module_DyteConnectedMeetings+deleteMeetings (resolved as: /rn-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings+deleteMeetings)
+   -> linking to #module_DyteConnectedMeetings+moveParticipants (resolved as: /rn-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings+moveParticipants)
+   -> linking to #module_DyteConnectedMeetings+moveParticipantsWithCustomPreset (resolved as: /rn-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings+moveParticipantsWithCustomPreset)
+- Broken anchor on source page path = /rn-core/reference/DyteLivestream:
+   -> linking to #module_DyteLivestream (resolved as: /rn-core/reference/DyteLivestream#module_DyteLivestream)
+   -> linking to #module_DyteLivestream+start (resolved as: /rn-core/reference/DyteLivestream#module_DyteLivestream+start)
+   -> linking to #module_DyteLivestream+stop (resolved as: /rn-core/reference/DyteLivestream#module_DyteLivestream+stop)
+- Broken anchor on source page path = /rn-core/reference/DyteMeta:
+   -> linking to #module_DyteMeta (resolved as: /rn-core/reference/DyteMeta#module_DyteMeta)
+   -> linking to #module_DyteMeta+selfActiveTab (resolved as: /rn-core/reference/DyteMeta#module_DyteMeta+selfActiveTab)
+   -> linking to #module_DyteMeta+broadcastTabChanges (resolved as: /rn-core/reference/DyteMeta#module_DyteMeta+broadcastTabChanges)
+   -> linking to #module_DyteMeta+viewType (resolved as: /rn-core/reference/DyteMeta#module_DyteMeta+viewType)
+   -> linking to #module_DyteMeta+meetingStartedTimestamp (resolved as: /rn-core/reference/DyteMeta#module_DyteMeta+meetingStartedTimestamp)
+   -> linking to #module_DyteMeta+meetingTitle (resolved as: /rn-core/reference/DyteMeta#module_DyteMeta+meetingTitle)
+   -> linking to #module_DyteMeta+sessionId (resolved as: /rn-core/reference/DyteMeta#module_DyteMeta+sessionId)
+   -> linking to #module_DyteMeta+meetingId (resolved as: /rn-core/reference/DyteMeta#module_DyteMeta+meetingId)
+   -> linking to #module_DyteMeta+mediaConnected (resolved as: /rn-core/reference/DyteMeta#module_DyteMeta+mediaConnected)
+   -> linking to #module_DyteMeta+socketConnected (resolved as: /rn-core/reference/DyteMeta#module_DyteMeta+socketConnected)
+   -> linking to #module_DyteMeta+setBroadcastTabChanges (resolved as: /rn-core/reference/DyteMeta#module_DyteMeta+setBroadcastTabChanges)
+   -> linking to #module_DyteMeta+setSelfActiveTab (resolved as: /rn-core/reference/DyteMeta#module_DyteMeta+setSelfActiveTab)
+- Broken anchor on source page path = /rn-core/reference/DyteParticipant:
+   -> linking to #module_DyteParticipant (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant)
+   -> linking to #module_DyteParticipant--this.+id (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+id)
+   -> linking to #module_DyteParticipant--this.+userId (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+userId)
+   -> linking to #module_DyteParticipant--this.+name (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+name)
+   -> linking to #module_DyteParticipant--this.+picture (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+picture)
+   -> linking to #module_DyteParticipant--this.+customParticipantId (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+customParticipantId)
+   -> linking to #module_DyteParticipant--this.+device (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+device)
+   -> linking to #module_DyteParticipant--this.+videoTrack (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+videoTrack)
+   -> linking to #module_DyteParticipant--this.+audioTrack (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+audioTrack)
+   -> linking to #module_DyteParticipant--this.+screenShareTracks (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+screenShareTracks)
+   -> linking to #module_DyteParticipant--this.+videoEnabled (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+videoEnabled)
+   -> linking to #module_DyteParticipant--this.+audioEnabled (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+audioEnabled)
+   -> linking to #module_DyteParticipant--this.+screenShareEnabled (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+screenShareEnabled)
+   -> linking to #module_DyteParticipant--this.+producers (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+producers)
+   -> linking to #module_DyteParticipant--this.+supportsRemoteControl (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+supportsRemoteControl)
+   -> linking to #module_DyteParticipant--this.+presetName (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+presetName)
+   -> linking to #module_DyteParticipant--this.+stageStatus (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+stageStatus)
+   -> linking to #module_DyteParticipant--this.+roomJoined (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+roomJoined)
+   -> linking to #module_DyteParticipant--this.+isPinned (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+isPinned)
+   -> linking to #module_DyteParticipant--this.+pin (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+pin)
+   -> linking to #module_DyteParticipant--this.+unpin (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+unpin)
+   -> linking to #module_DyteParticipant--this.+setIsPinned (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+setIsPinned)
+   -> linking to #module_DyteParticipant--this.+disableAudio (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+disableAudio)
+   -> linking to #module_DyteParticipant--this.+kick (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+kick)
+   -> linking to #module_DyteParticipant--this.+disableVideo (resolved as: /rn-core/reference/DyteParticipant#module_DyteParticipant--this.+disableVideo)
+- Broken anchor on source page path = /rn-core/reference/DyteParticipants:
+   -> linking to #module_DyteParticipants (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants)
+   -> linking to #module_DyteParticipants--module.exports+waitlisted (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+waitlisted)
+   -> linking to #module_DyteParticipants--module.exports+joined (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+joined)
+   -> linking to #module_DyteParticipants--module.exports+active (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+active)
+   -> linking to #module_DyteParticipants--module.exports+pinned (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+pinned)
+   -> linking to #module_DyteParticipants--module.exports+all (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+all)
+   -> linking to #module_DyteParticipants--module.exports+pip (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+pip)
+   -> linking to #module_DyteParticipants--module.exports+roomJoined (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+roomJoined)
+   -> linking to #module_DyteParticipants--module.exports+viewMode (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+viewMode)
+   -> linking to #module_DyteParticipants--module.exports+currentPage (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+currentPage)
+   -> linking to #module_DyteParticipants--module.exports+lastActiveSpeaker (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+lastActiveSpeaker)
+   -> linking to #module_DyteParticipants--module.exports+selectedPeers (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+selectedPeers)
+   -> linking to #module_DyteParticipants--module.exports+count (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+count)
+   -> linking to #module_DyteParticipants--module.exports+maxActiveParticipantsCount (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+maxActiveParticipantsCount)
+   -> linking to #module_DyteParticipants--module.exports+pageCount (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+pageCount)
+   -> linking to #module_DyteParticipants--module.exports+setMaxActiveParticipantsCount (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+setMaxActiveParticipantsCount)
+   -> linking to #module_DyteParticipants--module.exports+acceptWaitingRoomRequest (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+acceptWaitingRoomRequest)
+   -> linking to #module_DyteParticipants--module.exports+acceptAllWaitingRoomRequest (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+acceptAllWaitingRoomRequest)
+   -> linking to #module_DyteParticipants--module.exports+rejectWaitingRoomRequest (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+rejectWaitingRoomRequest)
+   -> linking to #module_DyteParticipants--module.exports+setViewMode (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+setViewMode)
+   -> linking to #module_DyteParticipants--module.exports+setPage (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+setPage)
+   -> linking to #module_DyteParticipants--module.exports+disableAllAudio (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+disableAllAudio)
+   -> linking to #module_DyteParticipants--module.exports+disableAllVideo (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+disableAllVideo)
+   -> linking to #module_DyteParticipants--module.exports+kickAll (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+kickAll)
+   -> linking to #module_DyteParticipants--module.exports+broadcastMessage (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+broadcastMessage)
+   -> linking to #module_DyteParticipants--module.exports+getAllJoinedPeers (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+getAllJoinedPeers)
+   -> linking to #module_DyteParticipants--module.exports+getParticipantsInMeetingPreJoin (resolved as: /rn-core/reference/DyteParticipants#module_DyteParticipants--module.exports+getParticipantsInMeetingPreJoin)
+- Broken anchor on source page path = /rn-core/reference/DytePermissionsPreset:
+   -> linking to #module_DytePermissionsPreset (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset)
+   -> linking to #module_DytePermissionsPreset+stageEnabled (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+stageEnabled)
+   -> linking to #module_DytePermissionsPreset+stageAccess (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+stageAccess)
+   -> linking to #module_DytePermissionsPreset+acceptWaitingRequests (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+acceptWaitingRequests)
+   -> linking to #module_DytePermissionsPreset+requestProduceVideo (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+requestProduceVideo)
+   -> linking to #module_DytePermissionsPreset+requestProduceAudio (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+requestProduceAudio)
+   -> linking to #module_DytePermissionsPreset+requestProduceScreenshare (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+requestProduceScreenshare)
+   -> linking to #module_DytePermissionsPreset+canAllowParticipantAudio (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canAllowParticipantAudio)
+   -> linking to #module_DytePermissionsPreset+canAllowParticipantScreensharing (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canAllowParticipantScreensharing)
+   -> linking to #module_DytePermissionsPreset+canAllowParticipantVideo (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canAllowParticipantVideo)
+   -> linking to #module_DytePermissionsPreset+canDisableParticipantAudio (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canDisableParticipantAudio)
+   -> linking to #module_DytePermissionsPreset+canDisableParticipantVideo (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canDisableParticipantVideo)
+   -> linking to #module_DytePermissionsPreset+kickParticipant (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+kickParticipant)
+   -> linking to #module_DytePermissionsPreset+pinParticipant (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+pinParticipant)
+   -> linking to #module_DytePermissionsPreset+canRecord (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canRecord)
+   -> linking to #module_DytePermissionsPreset+waitingRoomBehaviour (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+waitingRoomBehaviour)
+   -> linking to #module_DytePermissionsPreset+plugins (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+plugins)
+   -> linking to #module_DytePermissionsPreset+polls (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+polls)
+   -> linking to #module_DytePermissionsPreset+canProduceVideo (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canProduceVideo)
+   -> linking to #module_DytePermissionsPreset+canProduceScreenshare (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canProduceScreenshare)
+   -> linking to #module_DytePermissionsPreset+canProduceAudio (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canProduceAudio)
+   -> linking to #module_DytePermissionsPreset+chatPublic (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+chatPublic)
+   -> linking to #module_DytePermissionsPreset+chatPrivate (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+chatPrivate)
+   -> linking to #module_DytePermissionsPreset+hiddenParticipant (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+hiddenParticipant)
+   -> linking to #module_DytePermissionsPreset+showParticipantList (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+showParticipantList)
+   -> linking to #module_DytePermissionsPreset+canChangeParticipantPermissions (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canChangeParticipantPermissions)
+   -> linking to #module_DytePermissionsPreset+canLivestream (resolved as: /rn-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canLivestream)
+- Broken anchor on source page path = /rn-core/reference/DytePlugin:
+   -> linking to #module_DytePlugin (resolved as: /rn-core/reference/DytePlugin#module_DytePlugin)
+   -> linking to #module_DytePlugin+roomJoined (resolved as: /rn-core/reference/DytePlugin#module_DytePlugin+roomJoined)
+   -> linking to #module_DytePlugin+sendIframeEvent (resolved as: /rn-core/reference/DytePlugin#module_DytePlugin+sendIframeEvent)
+   -> linking to #module_DytePlugin+sendData (resolved as: /rn-core/reference/DytePlugin#module_DytePlugin+sendData)
+   -> linking to #module_DytePlugin+removePluginView (resolved as: /rn-core/reference/DytePlugin#module_DytePlugin+removePluginView)
+   -> linking to #module_DytePlugin+addPluginView (resolved as: /rn-core/reference/DytePlugin#module_DytePlugin+addPluginView)
+   -> linking to #module_DytePlugin+activateForSelf (resolved as: /rn-core/reference/DytePlugin#module_DytePlugin+activateForSelf)
+   -> linking to #module_DytePlugin+deactivateForSelf (resolved as: /rn-core/reference/DytePlugin#module_DytePlugin+deactivateForSelf)
+   -> linking to #module_DytePlugin+enable (resolved as: /rn-core/reference/DytePlugin#module_DytePlugin+enable)
+   -> linking to #module_DytePlugin+disable (resolved as: /rn-core/reference/DytePlugin#module_DytePlugin+disable)
+   -> linking to #module_DytePlugin+activate (resolved as: /rn-core/reference/DytePlugin#module_DytePlugin+activate)
+   -> linking to #module_DytePlugin+deactivate (resolved as: /rn-core/reference/DytePlugin#module_DytePlugin+deactivate)
+- Broken anchor on source page path = /rn-core/reference/DytePlugins:
+   -> linking to #module_DytePlugins (resolved as: /rn-core/reference/DytePlugins#module_DytePlugins)
+   -> linking to #module_DytePlugins+all (resolved as: /rn-core/reference/DytePlugins#module_DytePlugins+all)
+   -> linking to #module_DytePlugins+active (resolved as: /rn-core/reference/DytePlugins#module_DytePlugins+active)
+- Broken anchor on source page path = /rn-core/reference/DytePolls:
+   -> linking to #module_DytePolls (resolved as: /rn-core/reference/DytePolls#module_DytePolls)
+   -> linking to #module_DytePolls+items (resolved as: /rn-core/reference/DytePolls#module_DytePolls+items)
+   -> linking to #module_DytePolls+roomJoined (resolved as: /rn-core/reference/DytePolls#module_DytePolls+roomJoined)
+   -> linking to #module_DytePolls+create (resolved as: /rn-core/reference/DytePolls#module_DytePolls+create)
+   -> linking to #module_DytePolls+vote (resolved as: /rn-core/reference/DytePolls#module_DytePolls+vote)
+- Broken anchor on source page path = /rn-core/reference/DyteRecording:
+   -> linking to #module_DyteRecording (resolved as: /rn-core/reference/DyteRecording#module_DyteRecording)
+   -> linking to #module_DyteRecording+start (resolved as: /rn-core/reference/DyteRecording#module_DyteRecording+start)
+   -> linking to #module_DyteRecording+stop (resolved as: /rn-core/reference/DyteRecording#module_DyteRecording+stop)
+   -> linking to #module_DyteRecording+pause (resolved as: /rn-core/reference/DyteRecording#module_DyteRecording+pause)
+   -> linking to #module_DyteRecording+resume (resolved as: /rn-core/reference/DyteRecording#module_DyteRecording+resume)
+- Broken anchor on source page path = /rn-core/reference/DyteRemote:
+   -> linking to #module_DyteRemote (resolved as: /rn-core/reference/DyteRemote#module_DyteRemote)
+   -> linking to #module_DyteRemote+requestControl (resolved as: /rn-core/reference/DyteRemote#module_DyteRemote+requestControl)
+   -> linking to #module_DyteRemote+acceptControl (resolved as: /rn-core/reference/DyteRemote#module_DyteRemote+acceptControl)
+   -> linking to #module_DyteRemote+endControl (resolved as: /rn-core/reference/DyteRemote#module_DyteRemote+endControl)
+- Broken anchor on source page path = /rn-core/reference/DyteSelf:
+   -> linking to #module_DyteSelf (resolved as: /rn-core/reference/DyteSelf#module_DyteSelf)
+   -> linking to #module_DyteSelf+roomState (resolved as: /rn-core/reference/DyteSelf#module_DyteSelf+roomState)
+   -> linking to #module_DyteSelf+permissions (resolved as: /rn-core/reference/DyteSelf#module_DyteSelf+permissions)
+   -> linking to #module_DyteSelf+config (resolved as: /rn-core/reference/DyteSelf#module_DyteSelf+config)
+   -> linking to #module_DyteSelf+roomJoined (resolved as: /rn-core/reference/DyteSelf#module_DyteSelf+roomJoined)
+   -> linking to #module_DyteSelf+isPinned (resolved as: /rn-core/reference/DyteSelf#module_DyteSelf+isPinned)
+   -> linking to #module_DyteSelf+setName (resolved as: /rn-core/reference/DyteSelf#module_DyteSelf+setName)
+   -> linking to #module_DyteSelf+setupTracks (resolved as: /rn-core/reference/DyteSelf#module_DyteSelf+setupTracks)
+   -> linking to #module_DyteSelf+enableAudio (resolved as: /rn-core/reference/DyteSelf#module_DyteSelf+enableAudio)
+   -> linking to #module_DyteSelf+enableVideo (resolved as: /rn-core/reference/DyteSelf#module_DyteSelf+enableVideo)
+   -> linking to #module_DyteSelf+updateVideoConstraints (resolved as: /rn-core/reference/DyteSelf#module_DyteSelf+updateVideoConstraints)
+   -> linking to #module_DyteSelf+enableScreenShare (resolved as: /rn-core/reference/DyteSelf#module_DyteSelf+enableScreenShare)
+   -> linking to #module_DyteSelf+updateScreenshareConstraints (resolved as: /rn-core/reference/DyteSelf#module_DyteSelf+updateScreenshareConstraints)
+   -> linking to #module_DyteSelf+disableAudio (resolved as: /rn-core/reference/DyteSelf#module_DyteSelf+disableAudio)
+   -> linking to #module_DyteSelf+disableVideo (resolved as: /rn-core/reference/DyteSelf#module_DyteSelf+disableVideo)
+   -> linking to #module_DyteSelf+disableScreenShare (resolved as: /rn-core/reference/DyteSelf#module_DyteSelf+disableScreenShare)
+   -> linking to #module_DyteSelf+getAllDevices (resolved as: /rn-core/reference/DyteSelf#module_DyteSelf+getAllDevices)
+   -> linking to #module_DyteSelf+setIsPinned (resolved as: /rn-core/reference/DyteSelf#module_DyteSelf+setIsPinned)
+   -> linking to #module_DyteSelf+pin (resolved as: /rn-core/reference/DyteSelf#module_DyteSelf+pin)
+   -> linking to #module_DyteSelf+unpin (resolved as: /rn-core/reference/DyteSelf#module_DyteSelf+unpin)
+- Broken anchor on source page path = /rn-core/reference/DyteSelfMedia:
+   -> linking to #module_DyteSelfMedia (resolved as: /rn-core/reference/DyteSelfMedia#module_DyteSelfMedia)
+   -> linking to #module_DyteSelfMedia+audioTrack (resolved as: /rn-core/reference/DyteSelfMedia#module_DyteSelfMedia+audioTrack)
+   -> linking to #module_DyteSelfMedia+rawAudioTrack (resolved as: /rn-core/reference/DyteSelfMedia#module_DyteSelfMedia+rawAudioTrack)
+   -> linking to #module_DyteSelfMedia+mediaPermissions (resolved as: /rn-core/reference/DyteSelfMedia#module_DyteSelfMedia+mediaPermissions)
+   -> linking to #module_DyteSelfMedia+videoTrack (resolved as: /rn-core/reference/DyteSelfMedia#module_DyteSelfMedia+videoTrack)
+   -> linking to #module_DyteSelfMedia+rawVideoTrack (resolved as: /rn-core/reference/DyteSelfMedia#module_DyteSelfMedia+rawVideoTrack)
+   -> linking to #module_DyteSelfMedia+screenShareTracks (resolved as: /rn-core/reference/DyteSelfMedia#module_DyteSelfMedia+screenShareTracks)
+   -> linking to #module_DyteSelfMedia+audioEnabled (resolved as: /rn-core/reference/DyteSelfMedia#module_DyteSelfMedia+audioEnabled)
+   -> linking to #module_DyteSelfMedia+videoEnabled (resolved as: /rn-core/reference/DyteSelfMedia#module_DyteSelfMedia+videoEnabled)
+   -> linking to #module_DyteSelfMedia+screenShareEnabled (resolved as: /rn-core/reference/DyteSelfMedia#module_DyteSelfMedia+screenShareEnabled)
+   -> linking to #module_DyteSelfMedia+addAudioMiddleware (resolved as: /rn-core/reference/DyteSelfMedia#module_DyteSelfMedia+addAudioMiddleware)
+   -> linking to #module_DyteSelfMedia+removeAudioMiddleware (resolved as: /rn-core/reference/DyteSelfMedia#module_DyteSelfMedia+removeAudioMiddleware)
+   -> linking to #module_DyteSelfMedia+addVideoMiddleware (resolved as: /rn-core/reference/DyteSelfMedia#module_DyteSelfMedia+addVideoMiddleware)
+   -> linking to #module_DyteSelfMedia+removeVideoMiddleware (resolved as: /rn-core/reference/DyteSelfMedia#module_DyteSelfMedia+removeVideoMiddleware)
+   -> linking to #module_DyteSelfMedia+getCurrentDevices (resolved as: /rn-core/reference/DyteSelfMedia#module_DyteSelfMedia+getCurrentDevices)
+   -> linking to #module_DyteSelfMedia+getAudioDevices (resolved as: /rn-core/reference/DyteSelfMedia#module_DyteSelfMedia+getAudioDevices)
+   -> linking to #module_DyteSelfMedia+getVideoDevices (resolved as: /rn-core/reference/DyteSelfMedia#module_DyteSelfMedia+getVideoDevices)
+   -> linking to #module_DyteSelfMedia+getSpeakerDevices (resolved as: /rn-core/reference/DyteSelfMedia#module_DyteSelfMedia+getSpeakerDevices)
+   -> linking to #module_DyteSelfMedia+getDeviceById (resolved as: /rn-core/reference/DyteSelfMedia#module_DyteSelfMedia+getDeviceById)
+   -> linking to #module_DyteSelfMedia+setDevice (resolved as: /rn-core/reference/DyteSelfMedia#module_DyteSelfMedia+setDevice)
+- Broken anchor on source page path = /rn-core/reference/DyteStage:
+   -> linking to #module_DyteStage (resolved as: /rn-core/reference/DyteStage#module_DyteStage)
+   -> linking to #module_DyteStage+getAccessRequests (resolved as: /rn-core/reference/DyteStage#module_DyteStage+getAccessRequests)
+   -> linking to #module_DyteStage+requestAccess (resolved as: /rn-core/reference/DyteStage#module_DyteStage+requestAccess)
+   -> linking to #module_DyteStage+cancelRequestAccess (resolved as: /rn-core/reference/DyteStage#module_DyteStage+cancelRequestAccess)
+   -> linking to #module_DyteStage+grantAccess (resolved as: /rn-core/reference/DyteStage#module_DyteStage+grantAccess)
+   -> linking to #module_DyteStage+denyAccess (resolved as: /rn-core/reference/DyteStage#module_DyteStage+denyAccess)
+   -> linking to #module_DyteStage+join (resolved as: /rn-core/reference/DyteStage#module_DyteStage+join)
+   -> linking to #module_DyteStage+leave (resolved as: /rn-core/reference/DyteStage#module_DyteStage+leave)
+   -> linking to #module_DyteStage+kick (resolved as: /rn-core/reference/DyteStage#module_DyteStage+kick)
+- Broken anchor on source page path = /rn-core/reference/DyteThemePreset:
+   -> linking to #module_DyteThemePreset (resolved as: /rn-core/reference/DyteThemePreset#module_DyteThemePreset)
+   -> linking to #module_DyteThemePreset+setupScreen (resolved as: /rn-core/reference/DyteThemePreset#module_DyteThemePreset+setupScreen)
+   -> linking to #module_DyteThemePreset+waitingRoom (resolved as: /rn-core/reference/DyteThemePreset#module_DyteThemePreset+waitingRoom)
+   -> linking to #module_DyteThemePreset+controlBar (resolved as: /rn-core/reference/DyteThemePreset#module_DyteThemePreset+controlBar)
+   -> linking to #module_DyteThemePreset+header (resolved as: /rn-core/reference/DyteThemePreset#module_DyteThemePreset+header)
+   -> linking to #module_DyteThemePreset+pipMode (resolved as: /rn-core/reference/DyteThemePreset#module_DyteThemePreset+pipMode)
+   -> linking to #module_DyteThemePreset+viewType (resolved as: /rn-core/reference/DyteThemePreset#module_DyteThemePreset+viewType)
+   -> linking to #module_DyteThemePreset+maxVideoStreams (resolved as: /rn-core/reference/DyteThemePreset#module_DyteThemePreset+maxVideoStreams)
+   -> linking to #module_DyteThemePreset+maxScreenShareCount (resolved as: /rn-core/reference/DyteThemePreset#module_DyteThemePreset+maxScreenShareCount)
+   -> linking to #module_DyteThemePreset+plugins (resolved as: /rn-core/reference/DyteThemePreset#module_DyteThemePreset+plugins)
+   -> linking to #module_DyteThemePreset+disabledPlugins (resolved as: /rn-core/reference/DyteThemePreset#module_DyteThemePreset+disabledPlugins)
+- Broken anchor on source page path = /ui-kit/customizations/custom-iconpack:
+   -> linking to /api#/operations/create_meeting
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /ui-kit/customizations/custom-locale:
+   -> linking to /api#/operations/create_meeting
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /ui-kit/quickstart:
+   -> linking to /api?v=v2#/operations/create_meeting
+   -> linking to /api?v=v2#/operations/add_participant
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /web-core:
+   -> linking to /api?v=v2#/operations/create_meeting
+   -> linking to /api?v=v2#/operations/add_participant
+   -> linking to /api#/operations/add_participant
+- Broken anchor on source page path = /web-core/reference/DyteAi:
+   -> linking to #module_DyteAi (resolved as: /web-core/reference/DyteAi#module_DyteAi)
+   -> linking to #module_DyteAi.parseTranscript (resolved as: /web-core/reference/DyteAi#module_DyteAi.parseTranscript)
+   -> linking to #module_DyteAi.parseTranscripts (resolved as: /web-core/reference/DyteAi#module_DyteAi.parseTranscripts)
+- Broken anchor on source page path = /web-core/reference/DyteChat:
+   -> linking to #module_DyteChat (resolved as: /web-core/reference/DyteChat#module_DyteChat)
+   -> linking to #module_DyteChat+messages (resolved as: /web-core/reference/DyteChat#module_DyteChat+messages)
+   -> linking to #module_DyteChat+channels (resolved as: /web-core/reference/DyteChat#module_DyteChat+channels)
+   -> linking to #module_DyteChat+socketJoined (resolved as: /web-core/reference/DyteChat#module_DyteChat+socketJoined)
+   -> linking to #module_DyteChat+pinned (resolved as: /web-core/reference/DyteChat#module_DyteChat+pinned)
+   -> linking to #module_DyteChat+setMaxTextLimit (resolved as: /web-core/reference/DyteChat#module_DyteChat+setMaxTextLimit)
+   -> linking to #module_DyteChat+sendTextMessage (resolved as: /web-core/reference/DyteChat#module_DyteChat+sendTextMessage)
+   -> linking to #module_DyteChat+sendImageMessage (resolved as: /web-core/reference/DyteChat#module_DyteChat+sendImageMessage)
+   -> linking to #module_DyteChat+sendFileMessage (resolved as: /web-core/reference/DyteChat#module_DyteChat+sendFileMessage)
+   -> linking to #module_DyteChat+sendMessage (resolved as: /web-core/reference/DyteChat#module_DyteChat+sendMessage)
+   -> linking to #module_DyteChat+getMessagesByUser (resolved as: /web-core/reference/DyteChat#module_DyteChat+getMessagesByUser)
+   -> linking to #module_DyteChat+getMessagesByType (resolved as: /web-core/reference/DyteChat#module_DyteChat+getMessagesByType)
+   -> linking to #module_DyteChat+pin (resolved as: /web-core/reference/DyteChat#module_DyteChat+pin)
+   -> linking to #module_DyteChat+unpin (resolved as: /web-core/reference/DyteChat#module_DyteChat+unpin)
+   -> linking to #module_DyteChat+getMessages (resolved as: /web-core/reference/DyteChat#module_DyteChat+getMessages)
+   -> linking to #module_DyteChat+createChannel (resolved as: /web-core/reference/DyteChat#module_DyteChat+createChannel)
+   -> linking to #module_DyteChat+updateChannel (resolved as: /web-core/reference/DyteChat#module_DyteChat+updateChannel)
+   -> linking to #module_DyteChat+sendMessageToChannel (resolved as: /web-core/reference/DyteChat#module_DyteChat+sendMessageToChannel)
+   -> linking to #module_DyteChat+getChannelMembers (resolved as: /web-core/reference/DyteChat#module_DyteChat+getChannelMembers)
+   -> linking to #module_DyteChat+searchMessages (resolved as: /web-core/reference/DyteChat#module_DyteChat+searchMessages)
+   -> linking to #module_DyteChat+markLastReadMessage (resolved as: /web-core/reference/DyteChat#module_DyteChat+markLastReadMessage)
+- Broken anchor on source page path = /web-core/reference/DyteClient:
+   -> linking to #module_DyteClient (resolved as: /web-core/reference/DyteClient#module_DyteClient)
+   -> linking to #module_DyteClient+participants (resolved as: /web-core/reference/DyteClient#module_DyteClient+participants)
+   -> linking to #module_DyteClient+self (resolved as: /web-core/reference/DyteClient#module_DyteClient+self)
+   -> linking to #module_DyteClient+meta (resolved as: /web-core/reference/DyteClient#module_DyteClient+meta)
+   -> linking to #module_DyteClient+ai (resolved as: /web-core/reference/DyteClient#module_DyteClient+ai)
+   -> linking to #module_DyteClient+plugins (resolved as: /web-core/reference/DyteClient#module_DyteClient+plugins)
+   -> linking to #module_DyteClient+chat (resolved as: /web-core/reference/DyteClient#module_DyteClient+chat)
+   -> linking to #module_DyteClient+polls (resolved as: /web-core/reference/DyteClient#module_DyteClient+polls)
+   -> linking to #module_DyteClient+connectedMeetings (resolved as: /web-core/reference/DyteClient#module_DyteClient+connectedMeetings)
+   -> linking to #module_DyteClient+__internals__ (resolved as: /web-core/reference/DyteClient#module_DyteClient+__internals__)
+   -> linking to #module_DyteClient+join (resolved as: /web-core/reference/DyteClient#module_DyteClient+join)
+   -> linking to #module_DyteClient+leave (resolved as: /web-core/reference/DyteClient#module_DyteClient+leave)
+   -> linking to #module_DyteClient+joinRoom (resolved as: /web-core/reference/DyteClient#module_DyteClient+joinRoom)
+   -> linking to #module_DyteClient+leaveRoom (resolved as: /web-core/reference/DyteClient#module_DyteClient+leaveRoom)
+   -> linking to #module_DyteClient.init (resolved as: /web-core/reference/DyteClient#module_DyteClient.init)
+- Broken anchor on source page path = /web-core/reference/DyteConnectedMeetings:
+   -> linking to #module_DyteConnectedMeetings (resolved as: /web-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings)
+   -> linking to #module_DyteConnectedMeetings+getConnectedMeetings (resolved as: /web-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings+getConnectedMeetings)
+   -> linking to #module_DyteConnectedMeetings+createMeetings (resolved as: /web-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings+createMeetings)
+   -> linking to #module_DyteConnectedMeetings+updateMeetings (resolved as: /web-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings+updateMeetings)
+   -> linking to #module_DyteConnectedMeetings+deleteMeetings (resolved as: /web-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings+deleteMeetings)
+   -> linking to #module_DyteConnectedMeetings+moveParticipants (resolved as: /web-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings+moveParticipants)
+   -> linking to #module_DyteConnectedMeetings+moveParticipantsWithCustomPreset (resolved as: /web-core/reference/DyteConnectedMeetings#module_DyteConnectedMeetings+moveParticipantsWithCustomPreset)
+- Broken anchor on source page path = /web-core/reference/DyteLivestream:
+   -> linking to #module_DyteLivestream (resolved as: /web-core/reference/DyteLivestream#module_DyteLivestream)
+   -> linking to #module_DyteLivestream+start (resolved as: /web-core/reference/DyteLivestream#module_DyteLivestream+start)
+   -> linking to #module_DyteLivestream+stop (resolved as: /web-core/reference/DyteLivestream#module_DyteLivestream+stop)
+- Broken anchor on source page path = /web-core/reference/DyteMeta:
+   -> linking to #module_DyteMeta (resolved as: /web-core/reference/DyteMeta#module_DyteMeta)
+   -> linking to #module_DyteMeta+selfActiveTab (resolved as: /web-core/reference/DyteMeta#module_DyteMeta+selfActiveTab)
+   -> linking to #module_DyteMeta+broadcastTabChanges (resolved as: /web-core/reference/DyteMeta#module_DyteMeta+broadcastTabChanges)
+   -> linking to #module_DyteMeta+viewType (resolved as: /web-core/reference/DyteMeta#module_DyteMeta+viewType)
+   -> linking to #module_DyteMeta+meetingStartedTimestamp (resolved as: /web-core/reference/DyteMeta#module_DyteMeta+meetingStartedTimestamp)
+   -> linking to #module_DyteMeta+meetingTitle (resolved as: /web-core/reference/DyteMeta#module_DyteMeta+meetingTitle)
+   -> linking to #module_DyteMeta+sessionId (resolved as: /web-core/reference/DyteMeta#module_DyteMeta+sessionId)
+   -> linking to #module_DyteMeta+meetingId (resolved as: /web-core/reference/DyteMeta#module_DyteMeta+meetingId)
+   -> linking to #module_DyteMeta+setBroadcastTabChanges (resolved as: /web-core/reference/DyteMeta#module_DyteMeta+setBroadcastTabChanges)
+   -> linking to #module_DyteMeta+setSelfActiveTab (resolved as: /web-core/reference/DyteMeta#module_DyteMeta+setSelfActiveTab)
+- Broken anchor on source page path = /web-core/reference/DyteParticipant:
+   -> linking to #module_DyteParticipant (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant)
+   -> linking to #exp_module_DyteParticipant--this. (resolved as: /web-core/reference/DyteParticipant#exp_module_DyteParticipant--this.)
+   -> linking to #module_DyteParticipant--this.+id (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+id)
+   -> linking to #module_DyteParticipant--this.+userId (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+userId)
+   -> linking to #module_DyteParticipant--this.+name (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+name)
+   -> linking to #module_DyteParticipant--this.+picture (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+picture)
+   -> linking to #module_DyteParticipant--this.+customParticipantId (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+customParticipantId)
+   -> linking to #module_DyteParticipant--this.+clientSpecificId (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+clientSpecificId)
+   -> linking to #module_DyteParticipant--this.+device (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+device)
+   -> linking to #module_DyteParticipant--this.+videoTrack (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+videoTrack)
+   -> linking to #module_DyteParticipant--this.+audioTrack (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+audioTrack)
+   -> linking to #module_DyteParticipant--this.+screenShareTracks (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+screenShareTracks)
+   -> linking to #module_DyteParticipant--this.+videoEnabled (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+videoEnabled)
+   -> linking to #module_DyteParticipant--this.+audioEnabled (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+audioEnabled)
+   -> linking to #module_DyteParticipant--this.+screenShareEnabled (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+screenShareEnabled)
+   -> linking to #module_DyteParticipant--this.+producers (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+producers)
+   -> linking to #module_DyteParticipant--this.+manualProducerConfig (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+manualProducerConfig)
+   -> linking to #module_DyteParticipant--this.+supportsRemoteControl (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+supportsRemoteControl)
+   -> linking to #module_DyteParticipant--this.+presetName (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+presetName)
+   -> linking to #module_DyteParticipant--this.+stageStatus (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+stageStatus)
+   -> linking to #module_DyteParticipant--this.+mediaJoined (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+mediaJoined)
+   -> linking to #module_DyteParticipant--this.+socketJoined (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+socketJoined)
+   -> linking to #module_DyteParticipant--this.+isPinned (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+isPinned)
+   -> linking to #module_DyteParticipant--this.+pin (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+pin)
+   -> linking to #module_DyteParticipant--this.+unpin (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+unpin)
+   -> linking to #module_DyteParticipant--this.+setIsPinned (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+setIsPinned)
+   -> linking to #module_DyteParticipant--this.+disableAudio (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+disableAudio)
+   -> linking to #module_DyteParticipant--this.+kick (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+kick)
+   -> linking to #module_DyteParticipant--this.+disableVideo (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+disableVideo)
+   -> linking to #module_DyteParticipant--this.+updateVideo (resolved as: /web-core/reference/DyteParticipant#module_DyteParticipant--this.+updateVideo)
+- Broken anchor on source page path = /web-core/reference/DyteParticipants:
+   -> linking to #module_DyteParticipants (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants)
+   -> linking to #module_DyteParticipants+waitlisted (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+waitlisted)
+   -> linking to #module_DyteParticipants+joined (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+joined)
+   -> linking to #module_DyteParticipants+active (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+active)
+   -> linking to #module_DyteParticipants+videoSubscribed (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+videoSubscribed)
+   -> linking to #module_DyteParticipants+audioSubscribed (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+audioSubscribed)
+   -> linking to #module_DyteParticipants+pinned (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+pinned)
+   -> linking to #module_DyteParticipants+all (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+all)
+   -> linking to #module_DyteParticipants+pip (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+pip)
+   -> linking to #module_DyteParticipants+socketJoined (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+socketJoined)
+   -> linking to #module_DyteParticipants+mediaJoined (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+mediaJoined)
+   -> linking to #module_DyteParticipants+viewMode (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+viewMode)
+   -> linking to #module_DyteParticipants+currentPage (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+currentPage)
+   -> linking to #module_DyteParticipants+lastActiveSpeaker (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+lastActiveSpeaker)
+   -> linking to #module_DyteParticipants+selectedPeers (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+selectedPeers)
+   -> linking to #module_DyteParticipants+count (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+count)
+   -> linking to #module_DyteParticipants+maxActiveParticipantsCount (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+maxActiveParticipantsCount)
+   -> linking to #module_DyteParticipants+pageCount (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+pageCount)
+   -> linking to #module_DyteParticipants+setMaxActiveParticipantsCount (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+setMaxActiveParticipantsCount)
+   -> linking to #module_DyteParticipants+acceptWaitingRoomRequest (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+acceptWaitingRoomRequest)
+   -> linking to #module_DyteParticipants+acceptAllWaitingRoomRequest (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+acceptAllWaitingRoomRequest)
+   -> linking to #module_DyteParticipants+rejectWaitingRoomRequest (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+rejectWaitingRoomRequest)
+   -> linking to #module_DyteParticipants+setViewMode (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+setViewMode)
+   -> linking to #module_DyteParticipants+setPage (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+setPage)
+   -> linking to #module_DyteParticipants+disableAllAudio (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+disableAllAudio)
+   -> linking to #module_DyteParticipants+disableAllVideo (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+disableAllVideo)
+   -> linking to #module_DyteParticipants+disableAudio (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+disableAudio)
+   -> linking to #module_DyteParticipants+disableVideo (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+disableVideo)
+   -> linking to #module_DyteParticipants+kick (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+kick)
+   -> linking to #module_DyteParticipants+kickAll (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+kickAll)
+   -> linking to #module_DyteParticipants+broadcastMessage (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+broadcastMessage)
+   -> linking to #module_DyteParticipants+getAllJoinedPeers (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+getAllJoinedPeers)
+   -> linking to #module_DyteParticipants+getParticipantsInMeetingPreJoin (resolved as: /web-core/reference/DyteParticipants#module_DyteParticipants+getParticipantsInMeetingPreJoin)
+- Broken anchor on source page path = /web-core/reference/DytePermissionsPreset:
+   -> linking to #module_DytePermissionsPreset (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset)
+   -> linking to #module_DytePermissionsPreset+stageEnabled (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+stageEnabled)
+   -> linking to #module_DytePermissionsPreset+stageAccess (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+stageAccess)
+   -> linking to #module_DytePermissionsPreset+acceptWaitingRequests (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+acceptWaitingRequests)
+   -> linking to #module_DytePermissionsPreset+requestProduceVideo (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+requestProduceVideo)
+   -> linking to #module_DytePermissionsPreset+requestProduceAudio (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+requestProduceAudio)
+   -> linking to #module_DytePermissionsPreset+requestProduceScreenshare (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+requestProduceScreenshare)
+   -> linking to #module_DytePermissionsPreset+canAllowParticipantAudio (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canAllowParticipantAudio)
+   -> linking to #module_DytePermissionsPreset+canAllowParticipantScreensharing (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canAllowParticipantScreensharing)
+   -> linking to #module_DytePermissionsPreset+canAllowParticipantVideo (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canAllowParticipantVideo)
+   -> linking to #module_DytePermissionsPreset+canDisableParticipantAudio (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canDisableParticipantAudio)
+   -> linking to #module_DytePermissionsPreset+canDisableParticipantVideo (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canDisableParticipantVideo)
+   -> linking to #module_DytePermissionsPreset+kickParticipant (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+kickParticipant)
+   -> linking to #module_DytePermissionsPreset+pinParticipant (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+pinParticipant)
+   -> linking to #module_DytePermissionsPreset+canRecord (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canRecord)
+   -> linking to #module_DytePermissionsPreset+waitingRoomType (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+waitingRoomType)
+   -> linking to #module_DytePermissionsPreset+waitingRoomBehaviour (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+waitingRoomBehaviour)
+   -> linking to #module_DytePermissionsPreset+plugins (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+plugins)
+   -> linking to #module_DytePermissionsPreset+polls (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+polls)
+   -> linking to #module_DytePermissionsPreset+produceVideo (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+produceVideo)
+   -> linking to #module_DytePermissionsPreset+requestProduce (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+requestProduce)
+   -> linking to #module_DytePermissionsPreset+canProduceVideo (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canProduceVideo)
+   -> linking to #module_DytePermissionsPreset+produceScreenshare (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+produceScreenshare)
+   -> linking to #module_DytePermissionsPreset+canProduceScreenshare (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canProduceScreenshare)
+   -> linking to #module_DytePermissionsPreset+produceAudio (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+produceAudio)
+   -> linking to #module_DytePermissionsPreset+canProduceAudio (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canProduceAudio)
+   -> linking to #module_DytePermissionsPreset+chatPublic (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+chatPublic)
+   -> linking to #module_DytePermissionsPreset+chatPrivate (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+chatPrivate)
+   -> linking to #module_DytePermissionsPreset+hiddenParticipant (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+hiddenParticipant)
+   -> linking to #module_DytePermissionsPreset+showParticipantList (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+showParticipantList)
+   -> linking to #module_DytePermissionsPreset+canChangeParticipantRole (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canChangeParticipantRole)
+   -> linking to #module_DytePermissionsPreset+canChangeParticipantPermissions (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canChangeParticipantPermissions)
+   -> linking to #module_DytePermissionsPreset+canChangeTheme (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canChangeTheme)
+   -> linking to #module_DytePermissionsPreset+canPresent (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canPresent)
+   -> linking to #module_DytePermissionsPreset+acceptPresentRequests (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+acceptPresentRequests)
+   -> linking to #module_DytePermissionsPreset+maxScreenShareCount (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+maxScreenShareCount)
+   -> linking to #module_DytePermissionsPreset+canLivestream (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset+canLivestream)
+   -> linking to #module_DytePermissionsPreset.fromResponse (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset.fromResponse)
+   -> linking to #module_DytePermissionsPreset.default (resolved as: /web-core/reference/DytePermissionsPreset#module_DytePermissionsPreset.default)
+- Broken anchor on source page path = /web-core/reference/DytePlugin:
+   -> linking to #module_DytePlugin (resolved as: /web-core/reference/DytePlugin#module_DytePlugin)
+   -> linking to #module_DytePlugin+sendIframeEvent (resolved as: /web-core/reference/DytePlugin#module_DytePlugin+sendIframeEvent)
+   -> linking to #module_DytePlugin+sendData (resolved as: /web-core/reference/DytePlugin#module_DytePlugin+sendData)
+   -> linking to #module_DytePlugin+removePluginView (resolved as: /web-core/reference/DytePlugin#module_DytePlugin+removePluginView)
+   -> linking to #module_DytePlugin+addPluginView (resolved as: /web-core/reference/DytePlugin#module_DytePlugin+addPluginView)
+   -> linking to #module_DytePlugin+activateForSelf (resolved as: /web-core/reference/DytePlugin#module_DytePlugin+activateForSelf)
+   -> linking to #module_DytePlugin+deactivateForSelf (resolved as: /web-core/reference/DytePlugin#module_DytePlugin+deactivateForSelf)
+   -> linking to #module_DytePlugin+enable (resolved as: /web-core/reference/DytePlugin#module_DytePlugin+enable)
+   -> linking to #module_DytePlugin+disable (resolved as: /web-core/reference/DytePlugin#module_DytePlugin+disable)
+   -> linking to #module_DytePlugin+activate (resolved as: /web-core/reference/DytePlugin#module_DytePlugin+activate)
+   -> linking to #module_DytePlugin+deactivate (resolved as: /web-core/reference/DytePlugin#module_DytePlugin+deactivate)
+- Broken anchor on source page path = /web-core/reference/DytePlugins:
+   -> linking to #module_DytePlugins (resolved as: /web-core/reference/DytePlugins#module_DytePlugins)
+   -> linking to #module_DytePlugins+all (resolved as: /web-core/reference/DytePlugins#module_DytePlugins+all)
+   -> linking to #module_DytePlugins+active (resolved as: /web-core/reference/DytePlugins#module_DytePlugins+active)
+- Broken anchor on source page path = /web-core/reference/DytePolls:
+   -> linking to #module_DytePolls (resolved as: /web-core/reference/DytePolls#module_DytePolls)
+   -> linking to #module_DytePolls+items (resolved as: /web-core/reference/DytePolls#module_DytePolls+items)
+   -> linking to #module_DytePolls+socketJoined (resolved as: /web-core/reference/DytePolls#module_DytePolls+socketJoined)
+   -> linking to #module_DytePolls+create (resolved as: /web-core/reference/DytePolls#module_DytePolls+create)
+   -> linking to #module_DytePolls+vote (resolved as: /web-core/reference/DytePolls#module_DytePolls+vote)
+- Broken anchor on source page path = /web-core/reference/DyteRecording:
+   -> linking to #module_DyteRecording (resolved as: /web-core/reference/DyteRecording#module_DyteRecording)
+   -> linking to #module_DyteRecording+start (resolved as: /web-core/reference/DyteRecording#module_DyteRecording+start)
+   -> linking to #module_DyteRecording+stop (resolved as: /web-core/reference/DyteRecording#module_DyteRecording+stop)
+   -> linking to #module_DyteRecording+pause (resolved as: /web-core/reference/DyteRecording#module_DyteRecording+pause)
+   -> linking to #module_DyteRecording+resume (resolved as: /web-core/reference/DyteRecording#module_DyteRecording+resume)
+- Broken anchor on source page path = /web-core/reference/DyteSelf:
+   -> linking to #module_DyteSelf (resolved as: /web-core/reference/DyteSelf#module_DyteSelf)
+   -> linking to #module_DyteSelf+roomState (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+roomState)
+   -> linking to #module_DyteSelf+permissions (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+permissions)
+   -> linking to #module_DyteSelf+config (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+config)
+   -> linking to #module_DyteSelf+roomJoined (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+roomJoined)
+   -> linking to #module_DyteSelf+isPinned (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+isPinned)
+   -> linking to #module_DyteSelf+cleanupEvents (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+cleanupEvents)
+   -> linking to #module_DyteSelf+setName (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+setName)
+   -> linking to #module_DyteSelf+setupTracks (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+setupTracks)
+   -> linking to #module_DyteSelf+enableAudio (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+enableAudio)
+   -> linking to #module_DyteSelf+enableVideo (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+enableVideo)
+   -> linking to #module_DyteSelf+updateVideoConstraints (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+updateVideoConstraints)
+   -> linking to #module_DyteSelf+enableScreenShare (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+enableScreenShare)
+   -> linking to #module_DyteSelf+updateScreenshareConstraints (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+updateScreenshareConstraints)
+   -> linking to #module_DyteSelf+disableAudio (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+disableAudio)
+   -> linking to #module_DyteSelf+disableVideo (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+disableVideo)
+   -> linking to #module_DyteSelf+disableScreenShare (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+disableScreenShare)
+   -> linking to #module_DyteSelf+getAllDevices (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+getAllDevices)
+   -> linking to #module_DyteSelf+setIsPinned (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+setIsPinned)
+   -> linking to #module_DyteSelf+pin (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+pin)
+   -> linking to #module_DyteSelf+unpin (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+unpin)
+   -> linking to #module_DyteSelf+hide (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+hide)
+   -> linking to #module_DyteSelf+show (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+show)
+   -> linking to #module_DyteSelf+setDevice (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+setDevice)
+   -> linking to #module_DyteSelf+updateVideo (resolved as: /web-core/reference/DyteSelf#module_DyteSelf+updateVideo)
+- Broken anchor on source page path = /web-core/reference/DyteStage:
+   -> linking to #module_DyteStage (resolved as: /web-core/reference/DyteStage#module_DyteStage)
+   -> linking to #module_DyteStage+getAccessRequests (resolved as: /web-core/reference/DyteStage#module_DyteStage+getAccessRequests)
+   -> linking to #module_DyteStage+requestAccess (resolved as: /web-core/reference/DyteStage#module_DyteStage+requestAccess)
+   -> linking to #module_DyteStage+cancelRequestAccess (resolved as: /web-core/reference/DyteStage#module_DyteStage+cancelRequestAccess)
+   -> linking to #module_DyteStage+grantAccess (resolved as: /web-core/reference/DyteStage#module_DyteStage+grantAccess)
+   -> linking to #module_DyteStage+denyAccess (resolved as: /web-core/reference/DyteStage#module_DyteStage+denyAccess)
+   -> linking to #module_DyteStage+join (resolved as: /web-core/reference/DyteStage#module_DyteStage+join)
+   -> linking to #module_DyteStage+leave (resolved as: /web-core/reference/DyteStage#module_DyteStage+leave)
+   -> linking to #module_DyteStage+kick (resolved as: /web-core/reference/DyteStage#module_DyteStage+kick)
+- Broken anchor on source page path = /web-core/reference/DyteThemePreset:
+   -> linking to #module_DyteThemePreset (resolved as: /web-core/reference/DyteThemePreset#module_DyteThemePreset)
+   -> linking to #module_DyteThemePreset+setupScreen (resolved as: /web-core/reference/DyteThemePreset#module_DyteThemePreset+setupScreen)
+   -> linking to #module_DyteThemePreset+waitingRoom (resolved as: /web-core/reference/DyteThemePreset#module_DyteThemePreset+waitingRoom)
+   -> linking to #module_DyteThemePreset+controlBar (resolved as: /web-core/reference/DyteThemePreset#module_DyteThemePreset+controlBar)
+   -> linking to #module_DyteThemePreset+header (resolved as: /web-core/reference/DyteThemePreset#module_DyteThemePreset+header)
+   -> linking to #module_DyteThemePreset+pipMode (resolved as: /web-core/reference/DyteThemePreset#module_DyteThemePreset+pipMode)
+   -> linking to #module_DyteThemePreset+viewType (resolved as: /web-core/reference/DyteThemePreset#module_DyteThemePreset+viewType)
+   -> linking to #module_DyteThemePreset+livestreamViewerQualities (resolved as: /web-core/reference/DyteThemePreset#module_DyteThemePreset+livestreamViewerQualities)
+   -> linking to #module_DyteThemePreset+maxVideoStreams (resolved as: /web-core/reference/DyteThemePreset#module_DyteThemePreset+maxVideoStreams)
+   -> linking to #module_DyteThemePreset+maxScreenShareCount (resolved as: /web-core/reference/DyteThemePreset#module_DyteThemePreset+maxScreenShareCount)
+   -> linking to #module_DyteThemePreset+plugins (resolved as: /web-core/reference/DyteThemePreset#module_DyteThemePreset+plugins)
+   -> linking to #module_DyteThemePreset+disabledPlugins (resolved as: /web-core/reference/DyteThemePreset#module_DyteThemePreset+disabledPlugins)
+   -> linking to #module_DyteThemePreset.fromResponse (resolved as: /web-core/reference/DyteThemePreset#module_DyteThemePreset.fromResponse)
+   -> linking to #module_DyteThemePreset.default (resolved as: /web-core/reference/DyteThemePreset#module_DyteThemePreset.default)
+- Broken anchor on source page path = /:
+   -> linking to /api#/operations/createMeeting
+   -> linking to /api#/operations/addPreset
+   -> linking to /api#/operations/deleteParticipant
+
+[SUCCESS] Generated static files in "build".
+[INFO] Use `npm run serve` command to test your build locally.

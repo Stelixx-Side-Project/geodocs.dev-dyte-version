@@ -11,47 +11,47 @@ export default function HelpSection({ className = '' }) {
           className,
         )}
       >
-        <h2 className="mb-12 text-center lg:text-3xl">
-          How can we help you today?
+        <h2 className="heading-serif mb-12 text-center lg:text-3xl">
+          How can we help your GEO workflow today?
         </h2>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           <div className="rounded-lg bg-zinc-100 p-6 dark:bg-zinc-900">
             <img
               src="/static/landing-page/calendar.svg"
-              alt="Book a demo"
+              alt="Contribute content"
               width="48"
               height="48"
             />
-            <h3 className="my-3">Book a Demo</h3>
+            <h3 className="my-3">Contribute Content</h3>
             <p className="text-zinc-600 dark:text-zinc-400">
-              Contact us for a demo. We are looking forward to connecting with
-              you.
+              Propose a checklist, template, or brief that improves the shared
+              GEO knowledge base.
             </p>
             <Link
-              href="https://dyte.io/schedule-demo"
+              href="/guides/geo"
               className="text-primary dark:text-primary-100"
             >
-              Schedule a Call &rarr;
+              Go to GEO hub &rarr;
             </Link>
           </div>
 
           <div className="rounded-lg bg-zinc-100 p-6 dark:bg-zinc-900">
             <img
               src="/static/landing-page/customer.svg"
-              alt="Support"
+              alt="Community"
               width="48"
               height="48"
             />
-            <h3 className="my-3">Support</h3>
+            <h3 className="my-3">Join the Community</h3>
             <p className="text-zinc-600 dark:text-zinc-400">
-              Dyte&apos;s expert support team is always available to help.
-              Connect for dedicated 1:1 support!
+              Discuss GEO playbooks, share learnings, and improve standards with
+              the wider contributor community.
             </p>
             <Link
-              href="https://dyte.io/contact"
+              href="/community-packages"
               className="text-primary dark:text-primary-100"
             >
-              Contact Us &rarr;
+              Explore community &rarr;
             </Link>
           </div>
 
@@ -64,8 +64,8 @@ export default function HelpSection({ className = '' }) {
             />
             <h3 className="my-3">FAQs</h3>
             <p className="text-zinc-600 dark:text-zinc-400">
-              Browse through our FAQs to find answers to commonly asked
-              questions.
+              Browse common GEO/AEO implementation questions and practical
+              answers.
             </p>
             <Link href="/faq" className="text-primary dark:text-primary-100">
               View FAQs &rarr;

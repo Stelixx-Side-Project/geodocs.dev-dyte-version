@@ -17,98 +17,66 @@ export default function SDKs() {
   return (
     <section className="mx-auto mb-32 flex w-full max-w-5xl flex-col p-4 py-0">
       <span className="mb-2 uppercase tracking-wider text-text-400">
-        SDK Documentation
+        TECHNICAL STANDARDS
       </span>
 
-      <h3 className="mb-12 text-4xl">
-        Build the way you want in the framework you want!
+      <h3 className="heading-serif mb-12 text-4xl">
+        Optimization Layers
       </h3>
 
+      <p className="mb-12 max-w-3xl text-text-400">
+        Technical standards that make your content communicate effectively with
+        LLM systems.
+      </p>
+
       <div className="mb-10">
-        <h4 className="mb-2 text-2xl">UI Kit</h4>
+        <h4 className="heading-serif mb-2 text-2xl">Semantic Markup</h4>
 
         <p className="mb-6 text-text-400">
-          Build faster with our prebuilt library of UI components, available for{' '}
-          <span className="font-semibold">all</span> frameworks.
+          Declare entities and intent with machine-readable structures.
         </p>
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
           <SDK
-            name="React"
-            to="/react-ui-kit"
+            name="JSON-LD Entities"
+            to="/guides/geo/fundamentals"
             icon="/static/landing-page/sdk-icons/react.png"
           />
           <SDK
-            name="Angular"
-            to="/angular-ui-kit"
+            name="FAQ Schema"
+            to="/guides/geo/strategy"
             icon="/static/landing-page/sdk-icons/angular.png"
           />
           <SDK
-            name="HTML"
-            to="/ui-kit"
+            name="Organization Schema"
+            to="/guides/geo/execution"
             icon="/static/landing-page/sdk-icons/html.png"
-          />
-          <SDK
-            name="Flutter"
-            to="/flutter"
-            icon="/static/landing-page/sdk-icons/flutter.png"
-          />
-          <SDK
-            name="React Native"
-            to="/react-native"
-            icon="/static/landing-page/sdk-icons/react.png"
-          />
-          <SDK
-            name="iOS"
-            to="/ios"
-            icon="/static/landing-page/sdk-icons/swift.png"
-          />
-          <SDK
-            name="Android"
-            to="/android"
-            icon="/static/landing-page/sdk-icons/kotlin.png"
           />
         </div>
       </div>
 
       <div>
-        <h4 className="mb-2 text-2xl">Core SDK</h4>
+        <h4 className="heading-serif mb-2 text-2xl">Content Protocols</h4>
 
         <p className="mb-6 text-text-400">
-          Our easy to use Video + Voice + Livestreaming{' '}
-          <span className="font-semibold">all in one</span> SDK
+          Authoring rules that improve retrieval, grounding, and citation quality.
         </p>
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
           <SDK
-            name="JS"
-            to="/web-core"
+            name="Markdown-First Formatting"
+            to="/guides/geo/execution"
             icon="/static/landing-page/sdk-icons/js.png"
           />
           <SDK
-            name="React"
-            to="/react-web-core"
+            name="Entity Linking"
+            to="/guides/geo/operations"
             icon="/static/landing-page/sdk-icons/react.png"
           />
           <SDK
-            name="Flutter"
-            to="/flutter-core"
+            name="Robot Directives"
+            to="/guides/geo/operations"
             icon="/static/landing-page/sdk-icons/flutter.png"
-          />
-          <SDK
-            name="React Native"
-            to="/rn-core"
-            icon="/static/landing-page/sdk-icons/react.png"
-          />
-          <SDK
-            name="iOS"
-            to="/ios-core"
-            icon="/static/landing-page/sdk-icons/swift.png"
-          />
-          <SDK
-            name="Android"
-            to="/android-core"
-            icon="/static/landing-page/sdk-icons/kotlin.png"
           />
         </div>
       </div>

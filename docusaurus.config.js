@@ -510,41 +510,43 @@ const config = {
         },
         items: [
           {
-            label: 'Guides',
-            to: 'guides',
-            className: 'guides-top-header',
+            label: 'Start Here',
+            to: '/guides/geo/fundamentals',
+            className: 'start-here-btn',
           },
           {
-            label: 'SDKs',
+            label: 'Playbooks',
+            to: '/guides/geo/strategy',
+          },
+          {
+            label: 'Artifacts',
             type: 'dropdown',
-            className: 'dyte-dropdown',
             items: [
               {
-                type: 'html',
-                value: sdksHTML,
-                className: 'dyte-dropdown',
+                label: 'Checklists',
+                to: '/guides/geo/execution',
+              },
+              {
+                label: 'Templates',
+                to: '/guides/geo/operations',
+              },
+              {
+                label: 'Scripts & Matrices',
+                to: '/guides/geo/proof',
+              },
+              {
+                label: 'SOPs',
+                to: '/guides/geo/operations',
               },
             ],
           },
           {
-            label: 'REST API',
+            label: 'Standards',
             to: '/api/',
           },
           {
-            label: 'Resources',
-            type: 'dropdown',
-            className: 'dyte-dropdown resources-dropdown',
-            items: [
-              {
-                type: 'html',
-                value: resourcesHTML,
-                className: 'dyte-dropdown',
-              },
-            ],
-          },
-          {
-            label: 'Support',
-            to: 'https://dyte.io/contact?type=docs',
+            label: 'Tools',
+            to: '/community-packages',
           },
 
           {
@@ -552,16 +554,10 @@ const config = {
             position: 'right',
           },
           {
-            label: 'Book a demo',
-            href: 'https://dyte.io/schedule-demo',
+            label: 'Start GEO Audit',
+            to: '/docs/geo-audit-checklist',
             position: 'right',
-            className: 'navbar-book-demo',
-          },
-          {
-            label: 'Sign Up',
-            href: 'https://dev.dyte.io/register',
-            position: 'right',
-            className: 'dev-portal-signup dev-portal-link',
+            className: 'start-geo-audit-btn',
           },
         ],
       },

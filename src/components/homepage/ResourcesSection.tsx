@@ -18,50 +18,33 @@ interface Resource {
 
 const ALL_RESOURCES: Resource[] = [
   {
-    url: '/guides/v2-migration-guide',
-    type: 'blog',
-    title: 'Migrate to v2 REST API',
+    url: '/guides/geo/fundamentals',
+    type: 'comparison',
+    title: 'GEO vs SEO Comparison Table',
     description:
-      'Excited to announce the release of our v2 REST APIs, which are faster, more idiomatic, and easier to use.',
+      'Compare ranking-focused and citation-focused systems to decide your GEO transition path.',
     image:
       'https://dyte.io/blog/content/images/size/w1000/2023/02/Dyte-Blog---v2-APIs.jpg',
     duration: '3 min',
   },
   {
-    url: 'https://dyte.io/blog/hls-in-depth/',
-    type: 'blog',
-    title: 'HLS in Depth',
+    url: '/guides/geo/proof',
+    type: 'script',
+    title: 'Weekly Reporting Script',
     description:
-      "HLS is widely adopted, simple, yet robust. Learn how it works from a client's perspective, its segments, features, and disadvantages.",
+      'A reusable reporting script for weekly GEO visibility tracking and team review.',
     image:
       'https://dyte.io/blog/content/images/size/w1000/2023/07/HLS--indepth--header--1.png',
     duration: '10 min',
   },
   {
-    url: 'https://www.youtube.com/watch?v=eVUqkNNHh1o',
-    type: 'video',
-    title: 'Integrating React UI Kit',
+    url: '/guides/geo/execution',
+    type: 'case signal',
+    title: 'Entity Coverage Impact',
     description:
-      'In this video learn how to use React UI Kit prebuilt components to add live video and audio to your React application.',
+      'Measure how entity coverage quality affects retrieval and citation consistency.',
     image: 'https://img.youtube.com/vi/eVUqkNNHh1o/hqdefault.jpg',
     duration: '5 min',
-  },
-  {
-    url: 'https://www.youtube.com/watch?v=ZkrZc8Neh6A',
-    type: 'video',
-    title: 'Video KYC App using React UI Kit',
-    description:
-      'In this episode of Dyte Byte we show how to build Video KYC App using React UI Kit.',
-    image: 'https://img.youtube.com/vi/ZkrZc8Neh6A/hqdefault.jpg',
-    duration: '5 min',
-  },
-  {
-    url: 'https://www.youtube.com/watch?v=UHuzWDxrvLk',
-    type: 'video',
-    title: 'Calling Dyte REST APIs',
-    description: 'Understand our HTTP REST APIs',
-    image: 'https://img.youtube.com/vi/UHuzWDxrvLk/hqdefault.jpg',
-    duration: '7 min',
   },
 ];
 
@@ -95,7 +78,7 @@ function Resource({
       </div>
       <div className="mt-4 flex items-center justify-between">
         <div className="text-sm text-text-400">
-          {`${duration} ${type === 'Video' ? 'watch' : 'read'}`}
+          {`${duration} read`}
         </div>
       </div>
     </Link>
@@ -104,7 +87,7 @@ function Resource({
 
 export default function ResourcesSection() {
   const [page, setPage] = useState(1);
-  const [activeType, setActiveType] = useState<'all' | 'blog' | 'video'>('all');
+  const [activeType, setActiveType] = useState<'all' | 'comparison' | 'script' | 'case signal'>('all');
 
   const resources =
     activeType === 'all'
@@ -133,13 +116,13 @@ export default function ResourcesSection() {
         <div className="flex items-center justify-between">
           <div>
             <span className="dyte-badge">RESOURCES</span>
-            <h2 className="mb-6 text-4xl">Want to know more?</h2>
+            <h2 className="heading-serif mb-6 text-4xl">Want to see the impact?</h2>
           </div>
           <Link
-            to="https://dyte.io/blog"
+            to="/guides/geo/proof"
             className="font-jakarta text-sm font-semibold text-primary"
           >
-            All Blogs <ArrowRightFilled className="ml-1" />
+            Measurement resources <ArrowRightFilled className="ml-1" />
           </Link>
         </div>
 
@@ -157,22 +140,32 @@ export default function ResourcesSection() {
           <button
             className={clsx(
               'rounded-lg px-4 py-2 transition-colors',
-              activeType === 'blog' &&
+              activeType === 'comparison' &&
                 'bg-zinc-700 text-white dark:bg-zinc-200 dark:text-black',
             )}
-            onClick={() => setActiveType('blog')}
+            onClick={() => setActiveType('comparison')}
           >
-            Blogs
+            Comparison
           </button>
           <button
             className={clsx(
               'rounded-lg px-4 py-2 transition-colors',
-              activeType === 'video' &&
+              activeType === 'script' &&
                 'bg-zinc-700 text-white dark:bg-zinc-200 dark:text-black',
             )}
-            onClick={() => setActiveType('video')}
+            onClick={() => setActiveType('script')}
           >
-            Videos
+            Script
+          </button>
+          <button
+            className={clsx(
+              'rounded-lg px-4 py-2 transition-colors',
+              activeType === 'case signal' &&
+                'bg-zinc-700 text-white dark:bg-zinc-200 dark:text-black',
+            )}
+            onClick={() => setActiveType('case signal')}
+          >
+            Case Signal
           </button>
         </div>
 

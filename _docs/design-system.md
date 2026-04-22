@@ -77,6 +77,7 @@ What makes MongoDB distinctive is its dual-mode design: a dark hero/feature sect
 
 ### Principles
 - **Serif for authority**: DM Serif Text at hero scale creates an editorial presence unusual in tech — it communicates that MongoDB is an institution, not a startup.
+- **Geodocs V1.2 rule**: Apply DM Serif Text to homepage hero headline and major section titles for a unified editorial hierarchy.
 - **Weight 300 as body default**: Plus Jakarta Sans uses light (300) for body text, creating an airy reading experience that contrasts with the dense, dark backgrounds.
 - **Wide-tracked monospace labels**: Source Code Pro uppercase at 1px–3px letter-spacing creates technical signposts that feel like database field labels — systematic, structured, classified.
 - **Four-weight range**: 300 (light body) → 400 (standard) → 500 (UI/nav) → 700 (bold CTA) — a wider range than most systems, enabling fine-grained hierarchy.

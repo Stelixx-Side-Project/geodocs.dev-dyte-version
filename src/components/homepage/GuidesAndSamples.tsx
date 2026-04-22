@@ -1,15 +1,12 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import {
-  AppsAddInRegular,
   ArrowRightFilled,
-  DocumentRegular,
-  OpenRegular,
-  RecordRegular,
-  VideoRegular,
+  CalendarRegular,
+  TargetRegular,
 } from '@fluentui/react-icons';
 import clsx from 'clsx';
-import { ChevronRight, GitHub } from 'react-feather';
+import { ChevronRight } from 'react-feather';
 
 interface Guide {
   title: string;
@@ -20,54 +17,44 @@ interface Guide {
 
 const guides: Guide[] = [
   {
-    title: 'Start Recording a Meeting',
-    icon: RecordRegular,
-    text: 'Check out an example of this integration of recording a meeting.',
-    link: '/guides/capabilities/recording',
+    title: 'What Changed in AI Search?',
+    icon: TargetRegular,
+    text: 'Fundamentals',
+    link: '/guides/geo/fundamentals',
   },
   {
-    title: 'Migrate from Twilio',
-    icon: VideoRegular,
-    text: 'Migration simplified. Refer the guide.',
-    link: '/guides/migration/twilio/concepts-twilio-vs-dyte',
-  },
-  {
-    title: 'Create a Breakout Room',
-    icon: AppsAddInRegular,
-    text: 'Easily split a meeting in separate sessions.',
-    link: '/guides/capabilities/breakoutroom/create-breakout-rooms',
+    title: '30/60/90 GEO Rollout Plan',
+    icon: CalendarRegular,
+    text: 'Strategy',
+    link: '/guides/geo/strategy',
   },
 ];
 
 interface Sample {
   title: string;
-  platform?: string;
-  source?: string;
-  blog?: string;
-  demo?: string;
+  format?: string;
+  actionLabel: string;
+  actionLink: string;
 }
 
 const samples: Sample[] = [
   {
-    title: 'Code Sharing Platform',
-    platform: 'React',
-    source: 'https://github.com/dyte-io/blog-live-code-sharing',
-    blog: 'https://dyte.io/blog/live-code-sharing-platform/',
-    demo: 'https://dyte-code-editor.herokuapp.com/room/bbbf8c1f-5eee-4548-90e6-54c1301711cb',
+    title: 'GEO Audit Checklist v1',
+    format: 'Markdown',
+    actionLabel: '↓ Download',
+    actionLink: '/docs/geo-audit-checklist',
   },
   {
-    title: 'Async Interview Platform',
-    platform: 'React',
-    blog: 'https://dyte.io/blog/async-interview-platform/',
-    source: 'https://github.com/dyte-io/async-interview',
-    demo: 'https://dyte-async-interview.vercel.app',
+    title: 'Citation Measurement Matrix',
+    format: 'Sheets',
+    actionLabel: '⎘ Copy',
+    actionLink: '/guides/geo/proof',
   },
   {
-    title: 'Live Proctoring System',
-    platform: 'React',
-    blog: 'https://dyte.io/blog/live-proctoring-system/',
-    source: 'https://github.com/dyte-io/proctored-live-interviews',
-    demo: 'https://dyte-multi-faces.netlify.app/',
+    title: 'Entity Coverage Tracker',
+    format: 'Sheets',
+    actionLabel: '⎘ Copy',
+    actionLink: '/guides/geo/execution',
   },
 ];
 
@@ -89,38 +76,23 @@ function Guide({ title, text, icon: Icon, link }: (typeof guides)[0]) {
   );
 }
 
-function Sample({ title, platform, blog, source, demo }: Sample) {
+function Sample({ title, format, actionLabel, actionLink }: Sample) {
   return (
     <div className="group flex cursor-pointer items-center justify-between rounded-lg border-2 border-transparent p-3 text-text-400/60 transition-colors hover:border-primary hover:text-primary">
       <div className="flex flex-col">
         <h4 className="mb-1 text-black group-hover:text-primary dark:text-white">
           {title}
         </h4>
-        <div className="text-sm text-text-400">{platform}</div>
+        <div className="text-sm text-text-400">{format}</div>
       </div>
 
       <div className="flex items-center gap-2.5">
-        {blog && (
-          <Link to={blog} className="text-inherit">
-            <DocumentRegular className="h-5 w-5" />
-          </Link>
-        )}
-
-        {demo && (
-          <Link to={demo} className="text-inherit">
-            <OpenRegular className="h-5 w-5" />
-          </Link>
-        )}
-
-        {source && (
-          <Link
-            to={source}
-            className="flex items-center gap-1 rounded-lg py-1 px-3 text-inherit transition-colors group-hover:bg-primary group-hover:text-white"
-          >
-            <GitHub className="h-4 w-4" />
-            <span className="font-semibold">Clone</span>
-          </Link>
-        )}
+        <Link
+          to={actionLink}
+          className="flex items-center gap-1 rounded-lg border border-secondary-700 py-1 px-3 font-semibold text-inherit transition-colors group-hover:border-primary group-hover:bg-primary group-hover:text-white"
+        >
+          <span>{actionLabel}</span>
+        </Link>
       </div>
     </div>
   );
@@ -131,10 +103,10 @@ export default function GuidesAndSamples() {
     <section className="no-underline-links my-40 mx-auto flex w-full max-w-5xl flex-col gap-10 p-4 py-0 md:flex-row md:gap-0">
       <div className="flex-1">
         <div className="mb-8 flex items-center justify-between">
-          <h3 className="m-0">Popular how to guides</h3>
+          <h3 className="heading-serif m-0">Build your GEO Strategy</h3>
 
-          <Link to="/guides" className="font-jakarta text-sm font-semibold">
-            View more guides <ArrowRightFilled className="ml-1" />
+          <Link to="/guides/geo/strategy" className="font-jakarta text-sm font-semibold">
+            View all playbooks <ArrowRightFilled className="ml-1" />
           </Link>
         </div>
 
@@ -154,13 +126,10 @@ export default function GuidesAndSamples() {
 
       <div className="w-full md:max-w-sm">
         <div className="mb-8 flex items-center justify-between">
-          <h3 className="m-0">Popular sample apps</h3>
+          <h3 className="heading-serif m-0">Tactical Artifacts</h3>
 
-          <Link
-            to="https://github.com/dyte-io"
-            className="font-jakarta text-sm font-semibold"
-          >
-            All apps <ArrowRightFilled className="ml-1" />
+          <Link to="/guides/geo/execution" className="font-jakarta text-sm font-semibold">
+            View all artifacts <ArrowRightFilled className="ml-1" />
           </Link>
         </div>
 
