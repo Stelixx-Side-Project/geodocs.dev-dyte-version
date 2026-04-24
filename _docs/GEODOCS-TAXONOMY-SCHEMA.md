@@ -1,19 +1,31 @@
-# Geodocs Taxonomy Metadata Schema (Artifact-first)
+# Geodocs Taxonomy Metadata Standard v1.0
 
-This schema standardizes metadata for all published documents so humans can browse quickly and LLMs can index consistently up to 1000+ articles.
+This file is the canonical taxonomy contract for geodocs.dev content in this repository.
 
-## Core Principles
+It defines:
 
-- Every article must include L1, L2, and L3 taxonomy fields.
-- Slugs must remain short, stable, and human-readable.
-- One article can target multiple roles (L2) and multiple artifacts (L3).
-- Hubs are generated from metadata, not hand-curated links.
+- Required metadata for every published article.
+- Canonical enums for Journey, Role, and Artifact.
+- Legacy alias mappings.
+- Slug policy and hub-generation rules.
+- CI validation gates.
 
-## Canonical Taxonomy Values
+## Scope
+
+- Applies to all strategic content pages under article routes.
+- Keeps canonical content URLs stable in v1.
+- Optimizes for both human navigation and machine retrieval.
+
+## Core Decisions (Locked)
+
+1. Canonical model is 3-level taxonomy: L1, L2, L3.
+2. Reader-facing navigation can remain 2-level where needed.
+3. Article slug policy for v1 is `/docs/<short-slug>`.
+4. Comparison is a first-class L3 artifact.
+
+## Canonical Enums
 
 ### L1 (Journey)
-
-Allowed values:
 
 - Fundamentals
 - Strategy
@@ -23,8 +35,6 @@ Allowed values:
 
 ### L2 (Role)
 
-Allowed values:
-
 - SEO Specialist
 - Marketing Manager
 - Developer
@@ -32,8 +42,6 @@ Allowed values:
 - AI Agent
 
 ### L3 (Artifact)
-
-Allowed values:
 
 - Checklist
 - Template
@@ -43,22 +51,33 @@ Allowed values:
 - Brief
 - Comparison
 
-## Frontmatter Contract (Docusaurus)
+## Legacy Alias Map
 
-Use this frontmatter for every article under docs:
+Alias values are allowed only during migration. Canonical values must be written to final content.
+
+| Legacy label | Canonical target |
+| --- | --- |
+| Strategist | SEO Specialist |
+| Agency Owner | Marketing Manager |
+| Implementer | Developer |
+| Founder | Marketing Manager |
+| Playbook | SOP |
+| Worksheet | Template |
+
+## Frontmatter Contract (Authoring)
+
+Use this contract for all new articles:
 
 ```yaml
 title: GEO Audit Checklist v1
 slug: /docs/geo-audit-checklist
 description: A practical checklist to audit GEO readiness for AI search visibility.
 
-taxonomy:
-  l1_journey: Execution
-  l2_roles:
-    - SEO Specialist
-    - Developer
-  l3_artifacts:
-    - Checklist
+L1_Journey: Execution
+L2_Role:
+  - SEO Specialist
+  - Developer
+L3_Artifact: Checklist
 
 artifact_type: Checklist
 primary_role: SEO Specialist
@@ -66,11 +85,12 @@ journey_stage: Execution
 
 status: active
 version: 1.0
-last_reviewed: 2026-04-23
+last_reviewed: 2026-04-24
 owners:
   - content-team
   - geo-ops
 
+intent_stage: execute
 keywords:
   - geo
   - ai search
@@ -86,76 +106,102 @@ llm:
     - citation optimization
 ```
 
-## Required vs Optional Fields
-
-Required:
+## Required Fields
 
 - title
 - slug
 - description
-- taxonomy.l1_journey
-- taxonomy.l2_roles
-- taxonomy.l3_artifacts
+- L1_Journey
+- L2_Role
+- L3_Artifact
 - artifact_type
 - primary_role
 - journey_stage
 
-Recommended:
+## Recommended Fields
 
 - status
 - version
 - last_reviewed
 - owners
+- intent_stage
 - keywords
 - llm.*
 
-## URL Rules
+## Slug Policy (v1)
 
-- Article pages: /docs/<short-slug>
-- Role hubs: /playbooks/<role-slug>
-- Artifact hubs: /artifacts/<artifact-slug>
-- Journey hubs: /journey/<l1-slug>
+### Canonical article rule
 
-Examples:
+- Article pages must use: `/docs/<short-slug>`.
+- Slugs must be lowercase kebab-case.
+- Slugs must be stable after publish unless there is a hard breaking reason.
 
-- /docs/geo-audit-checklist
-- /playbooks/seo-specialist
-- /artifacts/template
-- /journey/execution
+### Hub route rule
 
-## Content Team Authoring Checklist
+- Journey hubs: `/journey/<l1-slug>`
+- Role hubs: `/playbooks/<role-slug>`
+- Artifact hubs: `/artifacts/<artifact-slug>`
 
-- Pick exactly 1 L1 value.
-- Pick at least 1 L2 role.
-- Pick at least 1 L3 artifact.
-- Ensure artifact_type is one of L3 values.
-- Keep slug concise and stable.
-- Add llm.canonical_topic for de-duplication.
-- Update last_reviewed whenever the content changes meaningfully.
+### Reserved future rule
 
-## Validation Rules (for CI)
+- Pattern `/{l1}/{topic}/{intent}` is reserved for v1.1+ experiments and should not replace canonical v1 article URLs.
 
-- Reject if l1_journey not in allowed enum.
-- Reject if any l2_roles value not in allowed enum.
-- Reject if any l3_artifacts value not in allowed enum.
-- Reject if artifact_type not in allowed L3 enum.
-- Reject if slug does not start with /docs/ for article pages.
-- Warn if last_reviewed older than 180 days.
-- Warn if keywords count < 3.
+## Validation Contract (CI)
 
-## Query Patterns for Hub Generation
+### Reject (hard fail)
 
-- All Templates for Developer in Execution:
-  - taxonomy.l1_journey = Execution
-  - taxonomy.l2_roles includes Developer
-  - taxonomy.l3_artifacts includes Template
+- Missing any required field.
+- L1_Journey not in canonical L1 enum.
+- Any L2_Role value not in canonical L2 enum (after alias normalization).
+- L3_Artifact not in canonical L3 enum.
+- artifact_type not in canonical L3 enum.
+- primary_role not present in L2_Role list.
+- journey_stage does not match L1_Journey.
+- slug does not start with `/docs/`.
 
-- All Comparisons for Strategy:
-  - taxonomy.l1_journey = Strategy
-  - taxonomy.l3_artifacts includes Comparison
+### Warn (non-blocking)
 
-## Notes
+- last_reviewed older than 180 days.
+- keywords count lower than 3.
+- owners missing.
+- llm.canonical_topic missing.
 
-- Maintain enum values centrally in one config source to prevent drift.
-- Preserve exact casing in values for deterministic indexing.
-- Prefer additive taxonomy updates over changing historical values.
+## Hub Generation Query Patterns
+
+### Templates for developers in execution
+
+- L1_Journey = Execution
+- L2_Role includes Developer
+- L3_Artifact = Template
+
+### Comparisons in strategy
+
+- L1_Journey = Strategy
+- L3_Artifact = Comparison
+
+### Weekly operator lane for SEO Specialist
+
+- L2_Role includes SEO Specialist
+- L3_Artifact in (Checklist, SOP, Script)
+
+## Migration Rules for Existing Content
+
+1. Normalize aliases to canonical enum values.
+2. Keep current article URL if already valid under `/docs/`.
+3. Add missing required fields before adding recommended fields.
+4. Do not publish pages with mixed enum vocabularies.
+5. If uncertain between two roles, keep primary_role single and include secondary role in L2_Role list.
+
+## Definition of Done for Taxonomy Compliance
+
+- Required fields present and valid.
+- Enum values canonicalized.
+- Slug policy compliant.
+- One clear artifact type declared.
+- Validation passes with zero hard failures.
+
+## Governance
+
+- Single source of truth: this file plus JSON schema at `_docs/schemas/taxonomy-frontmatter.v1.schema.json`.
+- Enum updates are additive by default.
+- Any destructive enum change requires migration notes and reviewer approval.
